@@ -1,0 +1,276 @@
+<p align="center">
+  <img src="assets/taxinow-logo.png" width="540" alt="TaxiNow" />
+</p>
+
+# TaxiNow V1.0 Beta
+
+**[English](#english) | [中文](#中文)**
+
+> Flight simulation use only. Not for real-world navigation.<br>
+> 仅供模拟飞行使用，严禁用于真实飞行导航。
+
+## Official downloads
+
+Official TaxiNow releases are published only by **skylarkning** through:
+
+- the TaxiNow listing on [flightsim.to](https://flightsim.to/); and
+- this [TaxiNow-Release repository](https://github.com/skylarkning/TaxiNow-Release)
+  and its [Releases page](https://github.com/skylarkning/TaxiNow-Release/releases).
+
+Copies from any other website, marketplace, file-sharing service, group, or
+individual are unofficial and may have been modified. TaxiNow is 100% free.
+If you paid for it, the seller was not authorized by Sky Ning.
+
+TaxiNow 官方版本仅由 **skylarkning** 通过以下两处发布：
+
+- [flightsim.to](https://flightsim.to/) 上的 TaxiNow 官方页面；以及
+- 本 [TaxiNow-Release 仓库](https://github.com/skylarkning/TaxiNow-Release)
+  及其 [Releases 页面](https://github.com/skylarkning/TaxiNow-Release/releases)。
+
+其他网站、平台、网盘、群组或个人提供的版本均非官方版本，并可能已被修改。
+TaxiNow 完全免费；如果你付费购买了本软件，卖家并未获得 Sky Ning 授权。
+
+---
+
+## English
+
+### Introduction
+
+TaxiNow is an installed Windows PC application that runs locally on the user's
+computer. It provides detailed airport ground maps for Microsoft Flight
+Simulator and displays the aircraft's live ground position and heading while
+taxiing through SimConnect.
+
+TaxiNow is intended exclusively for personal flight-simulator use. It is not
+certified or suitable for real-world aviation, navigation, flight planning, or
+operational training.
+
+### Simulator compatibility
+
+- **Microsoft Flight Simulator 2024:** tested and supported
+- **Microsoft Flight Simulator 2020:** may work, but has not completed
+  compatibility testing
+
+Official MSFS 2020 support will be added in a future update.
+
+### Main features
+
+- Detailed airport ground maps
+- Runways, taxiways, taxilanes, aprons, terminals, parking stands, and labels
+- Live aircraft ground position and heading through SimConnect
+- Simulator connection and synchronization status
+- Manual position refresh
+- Airport search and quick ICAO map acquisition
+- Map acquisition by ICAO, Country/Region, or Province/State
+- Configurable parallel acquisitions: 1, 2, 4, 8, or 16
+- Progress, speed, elapsed time, and estimated remaining time
+- Map library grouped by Country/Region → Province/State → Airport
+- Storage usage, free-space information, and customizable storage location
+- Optional access from another device on the same trusted local network
+- Minimize-to-tray support
+
+Taxi-route calculation and turn-by-turn instructions are not included in this
+release.
+
+### Installation
+
+1. Download the installer from one of the two official channels above.
+2. Run `TaxiNow-V1.0-Beta-Setup.exe`.
+3. Read and accept the EULA.
+4. Complete setup and launch TaxiNow.
+
+TaxiNow installs for the current Windows user and normally does not require
+administrator privileges. Required Windows components are detected or
+installed automatically.
+
+### Getting started
+
+1. Start TaxiNow.
+2. Enter a four-character ICAO code in the airport selector.
+3. Add the airport map if it is not already installed.
+4. Start MSFS 2024 and load into a flight.
+5. Select the correct airport in TaxiNow.
+6. When synchronization turns green, the aircraft icon appears on the map.
+7. Use the position-refresh control if the display appears out of sync.
+
+Additional map-library and storage controls are available under
+**Maps & storage**.
+
+### Access from another device
+
+TaxiNow can display the active map on another device connected to the same
+trusted private network. Use the **Access at:** address shown in TaxiNow.
+Firefox is recommended.
+
+The local companion view uses HTTP without authentication. Do not expose its
+port through a router, and do not use this feature on public or untrusted
+networks. If Windows Firewall asks, allow Private networks only.
+
+### Security and privacy
+
+TaxiNow does not require an account, contain advertising, include built-in
+behavioral analytics, or automatically upload crash reports. Maps, settings,
+logs, caches, and the asset database are stored locally.
+
+For ground tracking, TaxiNow reads latitude, longitude, true heading,
+on-ground state, and ground speed from the simulator. It does not intentionally
+send live aircraft position to map-data providers.
+
+TaxiNow source code is not publicly available. Qualified independent security
+or privacy experts may request limited review access from Sky Ning solely to
+verify TaxiNow's security or privacy behavior. Approval and review conditions
+are at the developer's discretion. Review access does not grant permission to
+copy, modify, compile, publish, disclose, or redistribute the source code.
+
+### License and disclaimer
+
+TaxiNow is copyrighted software and is not open-source or public-domain
+software. It is provided free of charge for personal, non-commercial
+flight-simulation use. Commercial use, real-world navigation, modification,
+derivative works, resale, rehosting, and redistribution are prohibited unless
+Sky Ning gives prior written permission.
+
+**TaxiNow is provided “AS IS” and “AS AVAILABLE”, without warranties of any
+kind.**
+
+See the [License](LICENSE), [EULA](EULA.txt), [Disclaimer](DISCLAIMER.md), and
+[third-party notices](NOTICE) for the complete terms.
+
+### Uninstallation
+
+Use **Windows Settings → Apps → Installed apps → TaxiNow → Uninstall**, or the
+TaxiNow uninstall shortcut in the Start menu.
+
+Uninstallation permanently removes the application and TaxiNow data in the
+active storage location, including downloaded maps, databases, caches,
+settings, and logs. Back up anything you intend to retain first.
+
+### Troubleshooting
+
+- **Already running:** restore TaxiNow from the notification-area icon, or
+  right-click it and select **Quit**.
+- **Blank window:** close TaxiNow, run setup again to repair required
+  components, restart Windows, and try again.
+- **Red simulator status:** start MSFS 2024 and load a flight, then restart
+  TaxiNow if necessary.
+- **Orange simulator status:** finish loading the flight, remain on the ground,
+  wait briefly, and use position refresh.
+- **Missing aircraft icon:** select the correct airport and confirm the
+  synchronization status is green.
+- **Slow map acquisition:** reduce parallel tasks to 1, 2, or 4 and retry
+  later.
+
+---
+
+## 中文
+
+### 简介
+
+TaxiNow 是一款安装并运行于用户本地电脑上的 Windows PC 软件。它为微软飞行
+模拟器提供详细的机场地面地图，并通过 SimConnect 在滑行过程中显示飞机的
+实时位置与航向。
+
+TaxiNow 仅限个人模拟飞行使用，严禁用于真实飞行、真实导航、飞行计划或运行
+训练。
+
+### 模拟器兼容性
+
+- **Microsoft Flight Simulator 2024：**已经测试并支持
+- **Microsoft Flight Simulator 2020：**理论上可能可以使用，但尚未完成兼容性测试
+
+后续版本将加入对 MSFS 2020 的正式支持。
+
+### 主要功能
+
+- 详细的机场地面地图
+- 显示跑道、滑行道、机坪、航站楼、停机位及相关编号
+- 通过 SimConnect 显示飞机地面位置和航向
+- 模拟器连接及位置同步状态
+- 手动刷新飞机位置
+- 机场搜索及 ICAO 快速地图获取
+- 按 ICAO、国家/地区或省/州获取地图
+- 支持 1、2、4、8、16 个并行任务
+- 显示进度、速度、已用时间和预计剩余时间
+- 按“国家/地区 → 省/州 → 机场”管理地图库
+- 显示资源占用、剩余空间并支持自定义保存位置
+- 可选的同一可信局域网内其他设备访问
+- 支持最小化到系统托盘
+
+本版本不包含滑行路线计算或逐步滑行指引。
+
+### 安装方法
+
+1. 从上述两个官方渠道之一下载安装程序。
+2. 运行 `TaxiNow-V1.0-Beta-Setup.exe`。
+3. 阅读并同意最终用户许可协议。
+4. 完成安装并启动 TaxiNow。
+
+TaxiNow 按当前 Windows 用户安装，通常不需要管理员权限。必要的 Windows
+组件会由安装程序自动检测或安装。
+
+### 使用方法
+
+1. 启动 TaxiNow。
+2. 在机场选择器中输入四位 ICAO 代码。
+3. 如果机场尚未安装，请先添加该机场地图。
+4. 启动 MSFS 2024 并进入飞行。
+5. 在 TaxiNow 中选择正确的机场。
+6. 同步状态变为绿色后，地图上会显示飞机图标。
+7. 如果位置没有及时同步，请使用位置刷新按钮。
+
+更多地图库和存储设置位于 **Maps & storage**。
+
+### 其他设备访问
+
+TaxiNow 可以在同一可信私人局域网中的其他设备上显示当前地图。请使用软件
+中 **Access at:** 显示的地址，推荐使用 Firefox。
+
+该本地辅助功能使用不带身份验证的 HTTP。请勿在路由器中开放其端口，也不要
+在公共或不可信网络中使用。如果 Windows 防火墙询问权限，请仅允许专用网络。
+
+### 安全与隐私
+
+TaxiNow 不要求注册账号，不包含广告，不包含内置行为分析，也不会自动上传
+崩溃报告。地图、设置、日志、缓存和资源数据库均保存在本机。
+
+为了显示地面位置，TaxiNow 仅从模拟器读取纬度、经度、真航向、是否在地面及
+地速。TaxiNow 不会主动将实时飞机位置发送给地图数据提供方。
+
+TaxiNow 源代码不公开。符合条件的独立安全或隐私专家，可以仅以核验 TaxiNow
+安全与隐私行为为目的，向 Sky Ning 申请有限审查访问。是否批准及具体审查条件
+由开发者决定。审查权限不包含复制、修改、编译、公开、披露或再发布源代码的
+授权。
+
+### 许可与免责声明
+
+TaxiNow 是受版权保护的软件，不是开源或公有领域软件。软件完全免费，仅供个人、
+非商业模拟飞行使用。未经 Sky Ning 事先书面授权，禁止商业使用、真实飞行导航、
+修改、二次创作、倒卖、重新托管或重新分发。
+
+**TaxiNow 按“现状”和“可用状态”提供，不作任何形式的担保。**
+
+完整条款请参阅[许可协议](LICENSE)、[最终用户许可协议](EULA.txt)、
+[免责声明](DISCLAIMER.md)和[第三方声明](NOTICE)。
+
+### 卸载方法
+
+通过 **Windows 设置 → 应用 → 已安装的应用 → TaxiNow → 卸载**，或使用开始
+菜单中的 TaxiNow 卸载快捷方式。
+
+卸载会永久删除程序及当前资源位置中的 TaxiNow 数据，包括已下载地图、数据库、
+缓存、设置和日志。请先备份需要保留的内容。
+
+### 常见问题
+
+- **提示已经运行：**从系统托盘恢复 TaxiNow，或右键选择 **Quit**。
+- **窗口空白：**退出 TaxiNow，重新运行安装程序修复必要组件，重启 Windows
+  后再次尝试。
+- **模拟器状态为红色：**启动 MSFS 2024 并进入飞行，必要时重新启动 TaxiNow。
+- **模拟器状态为橙色：**等待飞行完全加载并保持飞机在地面，然后刷新位置。
+- **没有飞机图标：**选择正确机场并确认同步状态为绿色。
+- **地图获取较慢：**将并行任务降低到 1、2 或 4，并稍后重试。
+
+---
+
+Developed by Sky Ning (`skylarkning`).<br>
+TaxiNow 由 Sky Ning（`skylarkning`）开发。

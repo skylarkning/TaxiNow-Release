@@ -1,0 +1,130 @@
+TaxiNow End User License Agreement
+Version 1.0 - July 29, 2026
+
+Copyright (c) 2026 Sky Ning. All rights reserved.
+
+IMPORTANT: PLEASE READ THIS AGREEMENT CAREFULLY BEFORE INSTALLING OR USING
+TAXINOW. BY INSTALLING, COPYING, OR USING TAXINOW, YOU CONFIRM THAT YOU HAVE
+READ, UNDERSTOOD, AND AGREED TO THIS END USER LICENSE AGREEMENT ("EULA"). IF
+YOU DO NOT AGREE, DO NOT INSTALL OR USE TAXINOW.
+
+1. PRODUCT AND DEVELOPER
+
+TaxiNow is a Windows airport ground-map application developed by Sky Ning for
+personal use with consumer flight simulators. TaxiNow is provided free of
+charge. Official binaries are published only by the account "skylarkning"
+through the TaxiNow page on flightsim.to and the TaxiNow-Release repository at
+https://github.com/skylarkning/TaxiNow-Release. No reseller, marketplace,
+group, individual, or other platform is authorized to sell or redistribute
+TaxiNow. If you paid for TaxiNow, the seller was not authorized by Sky Ning.
+
+2. LIMITED PERSONAL LICENSE
+
+Subject to this EULA, Sky Ning grants you a limited, non-exclusive,
+non-transferable, non-sublicensable, and revocable permission to install and
+run one or more unmodified official copies of TaxiNow solely for your own
+personal, non-commercial flight-simulation activity.
+
+3. PROHIBITED USE
+
+Unless Sky Ning gives prior express written permission, you may not:
+
+  a. use TaxiNow for any commercial, professional, business,
+     revenue-generating, promotional, paid, or organizational purpose;
+  b. sell, rent, lease, sublicense, charge for, bundle for value, rehost,
+     mirror, upload, redistribute, or otherwise provide TaxiNow to another
+     person or platform;
+  c. use TaxiNow for real-world aviation, real-world navigation, aircraft
+     operation, operational training, flight planning, or any safety-critical
+     purpose;
+  d. modify, adapt, translate, patch, reverse engineer, decompile, disassemble,
+     or create derivative works from TaxiNow, except only where applicable law
+     expressly prohibits a restriction; or
+  e. remove or alter any copyright, attribution, license, authorship,
+     anti-resale, or safety notice.
+
+4. NOT FOR REAL-WORLD NAVIGATION
+
+TaxiNow is a flight-simulation map only. It is not certified, approved,
+validated, or intended for real-world aviation or navigation. Airport and map
+data may be incomplete, outdated, inaccurate, or unavailable. Never rely on
+TaxiNow for the operation of a real aircraft.
+
+5. THIRD-PARTY SOFTWARE AND DATA
+
+TaxiNow uses third-party software and map data. Those materials remain subject
+to their own licenses and terms. In particular, OpenStreetMap-derived data is
+provided under the Open Database License (ODbL) and requires attribution to
+OpenStreetMap contributors. OurAirports and X-Plane Scenery Gateway data remain
+subject to their respective terms. The TaxiNow Personal Non-Commercial License
+does not replace or limit rights independently granted by third parties.
+
+6. NETWORK AND DOWNLOADED DATA
+
+TaxiNow may connect to public map-data services to download airport assets. It
+also runs a local web service so that another device on the same trusted local
+network can display the map. You are responsible for using TaxiNow only on
+networks and devices you trust and for complying with applicable third-party
+service terms.
+
+Downloaded maps, the asset catalog, caches, settings, and logs are stored on
+your computer. TaxiNow lets you select a dedicated storage folder. Do not place
+unrelated personal files inside a TaxiNow data folder.
+
+7. UNINSTALLATION AND DATA DELETION
+
+The TaxiNow uninstaller is designed to remove the application and all TaxiNow
+user data for the current Windows user, including downloaded airport maps,
+asset databases, caches, settings, logs, and WebView2 profile data. Data
+deletion is permanent and cannot be undone. The uninstaller removes only the
+default TaxiNow data directory and custom data directories that TaxiNow has
+marked as dedicated TaxiNow storage.
+
+Before uninstalling, export or copy any TaxiNow data you intend to retain.
+Removing TaxiNow does not remove Microsoft Flight Simulator, the Microsoft Edge
+WebView2 Runtime, or third-party source data outside TaxiNow's dedicated data
+directories.
+
+8. OWNERSHIP
+
+TaxiNow and its original source code, executable files, user interface,
+artwork, logos, documentation, and other original materials are copyrighted by
+Sky Ning. All rights not expressly granted are reserved. Availability of
+release materials, license documents, or any limited source-review access does
+not grant permission to modify TaxiNow, create derivative works, use it
+commercially, or redistribute it.
+
+TaxiNow source code is not publicly available. Qualified independent security
+or privacy experts may request limited review access from Sky Ning for the sole
+purpose of verifying TaxiNow's security or privacy behavior. Approval and
+review conditions are at Sky Ning's discretion. Review access grants no right
+to copy, modify, compile, publish, disclose, or redistribute source code.
+
+9. TERMINATION
+
+Your permission terminates automatically if you breach this EULA. Upon
+termination, you must stop using TaxiNow and delete all copies in your
+possession or control, except where applicable law requires retention.
+
+10. DISCLAIMER
+
+TAXINOW IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, ACCURACY, AVAILABILITY, NON-INFRINGEMENT, OR SAFE
+OPERATION.
+
+11. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, SKY NING SHALL NOT BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR OTHER
+DAMAGES, OR FOR ANY LOSS OF DATA, PROFITS, USE, OR GOODWILL, ARISING FROM OR
+RELATING TO TAXINOW, ITS DATA, ITS INSTALLATION OR UNINSTALLATION, OR THIS EULA,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+12. COMPLETE TERMS
+
+This EULA is distributed together with the TaxiNow Personal Non-Commercial
+License and third-party NOTICE. If this EULA and the TaxiNow Personal
+Non-Commercial License conflict, the more restrictive term applies to TaxiNow
+materials to the maximum extent permitted by law. Any use not expressly
+permitted requires prior express written permission from Sky Ning.

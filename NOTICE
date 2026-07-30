@@ -1,0 +1,29 @@
+TaxiNow third-party data notices
+================================
+
+OpenStreetMap
+-------------
+
+The bundled tests/fixtures/airport-maps/CYYZ.v2.json regression asset contains
+data derived from OpenStreetMap.
+
+© OpenStreetMap contributors
+https://www.openstreetmap.org/copyright
+
+OpenStreetMap data is made available under the Open Data Commons Open Database
+License (ODbL) 1.0. This data asset is not covered by the TaxiNow Personal
+Non-Commercial License.
+
+OurAirports
+-----------
+
+TaxiNow uses the OurAirports airport and runway CSV datasets. OurAirports
+publishes its downloadable data as public domain.
+https://ourairports.com/data/
+
+X-Plane Scenery Gateway
+-----------------------
+
+When OpenStreetMap detail is unavailable, the map downloader can obtain airport
+layout data from the X-Plane Scenery Gateway.
+https://gateway.x-plane.com/

@@ -1,0 +1,131 @@
+TaxiNow Personal Non-Commercial License
+Version 1.0 — July 29, 2026
+
+Copyright (c) 2026 Sky Ning. All rights reserved.
+
+This license applies to TaxiNow revisions and releases that include it. It does
+not revoke permissions already granted for earlier revisions distributed under
+a different license.
+
+IMPORTANT: TaxiNow is free of charge, but it is not open-source software,
+free software, or public-domain software. No rights are granted except those
+expressly stated in this license.
+
+1. DEFINITIONS
+
+"TaxiNow Materials" means the TaxiNow-authored source code, executable files,
+user interface, artwork, logos, documentation, and other original materials
+included in this repository or an official TaxiNow release. It excludes
+third-party software, map data, simulator SDK components, and other materials
+identified in NOTICE or accompanied by their own license terms.
+
+"Official Copy" means an unmodified copy obtained from:
+
+  a. the TaxiNow page on flightsim.to published by the account
+     "skylarkning"; or
+  b. the TaxiNow-Release repository or its Releases page at
+     https://github.com/skylarkning/TaxiNow-Release.
+
+"Personal Non-Commercial Use" means use by an individual solely for that
+individual's private flight-simulation activity, without payment, revenue,
+commercial advantage, business use, organizational use, or use on behalf of
+another person or entity.
+
+2. LIMITED PERMISSION
+
+Subject to full compliance with this license, Sky Ning grants you a limited,
+non-exclusive, non-transferable, and non-sublicensable permission to:
+
+  a. download and install an Official Copy;
+  b. run the unmodified TaxiNow application solely for Personal
+     Non-Commercial Use with a consumer flight simulator; and
+  c. make reasonable backup copies solely for your own permitted use, provided
+     those copies are not shared with any other person.
+
+3. RESTRICTIONS
+
+Unless Sky Ning gives you prior express written permission, you may not:
+
+  a. use TaxiNow or any TaxiNow Materials for any commercial, professional,
+     business, revenue-generating, promotional, paid, or organizational
+     purpose;
+  b. sell, rent, lease, license, sublicense, charge for, bundle for value, or
+     otherwise monetize TaxiNow or access to TaxiNow;
+  c. use TaxiNow for real-world aviation, real-world navigation, aircraft
+     operations, flight planning, training for operational use, or any
+     safety-critical purpose;
+  d. modify, adapt, translate, alter, patch, or create derivative works based
+     on any TaxiNow Materials;
+  e. copy, publish, distribute, mirror, rehost, upload, transmit, or otherwise
+     provide TaxiNow or any TaxiNow Materials to another person or platform,
+     whether free of charge or for payment;
+  f. remove, conceal, or alter any copyright, attribution, license, warning,
+     authorship, or anti-resale notice;
+  g. use the TaxiNow name, logo, artwork, or visual identity in another
+     product, project, derivative work, or distribution; or
+  h. reverse engineer, decompile, or disassemble TaxiNow except to the limited
+     extent that applicable law expressly prohibits this restriction.
+
+4. OFFICIAL RELEASE REPOSITORY AND SOURCE REVIEW
+
+The public TaxiNow-Release repository provides official binaries, release
+information, this license, the EULA, and third-party notices. It does not
+contain the TaxiNow source code and is not a grant of open-source rights.
+
+TaxiNow source code is not publicly available. Qualified independent security
+or privacy experts may request limited review access from Sky Ning for the sole
+purpose of verifying TaxiNow's security or privacy behavior. Approval and
+review conditions are at Sky Ning's discretion. Review access grants no right
+to copy, modify, compile, publish, disclose, or redistribute source code or
+TaxiNow Materials.
+
+5. OFFICIAL DISTRIBUTION AND PAYMENT WARNING
+
+TaxiNow is provided free of charge. Official public binaries are distributed
+only by "skylarkning" through the TaxiNow page on flightsim.to and the
+TaxiNow-Release repository at
+https://github.com/skylarkning/TaxiNow-Release. No reseller, marketplace,
+group, individual, or other platform is authorized to sell or redistribute
+TaxiNow. If you paid for TaxiNow, the seller was not authorized by Sky Ning.
+
+6. THIRD-PARTY MATERIALS AND DATA
+
+Third-party materials remain governed by their respective licenses and terms.
+In particular, OpenStreetMap-derived map data is not covered by this license
+and remains subject to the Open Database License (ODbL) and applicable
+attribution requirements. Nothing in this license limits rights independently
+granted by a third-party license or by applicable law.
+
+7. OWNERSHIP
+
+Sky Ning retains all right, title, and interest in and to the TaxiNow Materials,
+including all copyright and other intellectual-property rights. All rights not
+expressly granted are reserved.
+
+8. TERMINATION
+
+Your permission under this license terminates automatically upon any breach.
+After termination, you must stop using TaxiNow and delete all copies in your
+possession or control, except copies that applicable law requires you to retain.
+Sections 3 through 10 survive termination.
+
+9. DISCLAIMER AND LIMITATION OF LIABILITY
+
+TAXINOW IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, ACCURACY, NON-INFRINGEMENT, OR SAFE OPERATION.
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, SKY NING SHALL NOT BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR OTHER
+DAMAGES, OR FOR ANY LOSS OF DATA, PROFITS, USE, OR GOODWILL, ARISING FROM OR
+RELATING TO TAXINOW OR THIS LICENSE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGES.
+
+TaxiNow is a flight-simulation map only. It is not certified, approved, or
+intended for real-world aviation or navigation.
+
+10. ADDITIONAL PERMISSION
+
+Any use not expressly permitted by this license requires prior express written
+permission from Sky Ning. A failure to enforce any provision is not a waiver of
+that provision or of any other right.
