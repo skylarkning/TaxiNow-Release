@@ -3,8 +3,8 @@
 ## English
 
 > **Important:** Uninstall any earlier TaxiNow version before installing Beta 4.
-> The uninstaller removes downloaded map assets, so those maps must be
-> downloaded again after installation.
+> Choose **Yes** when asked to keep downloaded maps and user data, so they can
+> be reused after installation.
 
 ### Changelog
 
@@ -25,6 +25,15 @@
   `JP-13` in the downloaded-asset hierarchy.
 - Moves **Fit airport** into an icon above the position-refresh and zoom
   controls, and renames **Asset storage** to **Downloaded Asset**.
+- Beta 4 update: restores the fixed bilingual welcome screen, completes the
+  Chinese About page, adds a globe language menu, and makes the long Chinese
+  download-help bubble scroll safely within the window.
+- Beta 4 update: suppresses unreliable whole-country ETAs until enough
+  airports have completed, explains the expected duration of large country
+  downloads, and conditionally supplements incomplete OSM terminal coverage
+  with X-Plane terminal footprints while keeping OSM primary.
+- Beta 4 update: the uninstaller now defaults to preserving downloaded maps
+  and user data for upgrades, with an explicit option to delete everything.
 
 TaxiNow is free for personal, non-commercial flight-simulation use and is
 provided **“AS IS”**, without warranties of any kind. It must not be used for
@@ -33,8 +42,8 @@ and disclaimer before installation.
 
 ## 中文
 
-> **重要：**安装 Beta 4 前，请先卸载任何旧版 TaxiNow。卸载程序会删除已下载的
-> 地图资源，因此安装完成后需要重新下载地图。
+> **重要：**安装 Beta 4 前，请先卸载任何旧版 TaxiNow。卸载器询问是否保留地图和
+> 用户数据时请选择 **“是”**，安装新版后即可继续使用。
 
 ### 更新日志
 
@@ -52,6 +61,11 @@ and disclaimer before installation.
   `JP-13` 等代码。
 - “适配机场范围”改为位于位置刷新和缩放按钮上方的图标按钮；“Asset storage”
   更名为“Downloaded Asset（已下载资源）”。
+- Beta 4 更新：恢复固定的英中双语欢迎页，补全中文“关于”页，语言按钮改为地球仪
+  下拉菜单，并让较长的中文下载说明气泡在窗口内安全滚动。
+- Beta 4 更新：整国下载完成足够机场样本前不再显示不可靠的夸张 ETA；新增整国下载
+  时间提示；在 OSM 航站楼覆盖不完整时仅补充 X-Plane 航站楼轮廓，仍保持 OSM 优先。
+- Beta 4 更新：卸载器默认保留已下载地图和用户数据以便升级复用，同时提供彻底删除选项。
 
 TaxiNow 完全免费，仅供个人、非商业模拟飞行使用，并按“现状”提供，不作任何
 形式的担保。严禁用于真实飞行导航。安装前请阅读仓库介绍、许可协议、最终用户

@@ -78,8 +78,8 @@ release.
 
 1. If an earlier TaxiNow version is installed, uninstall it before installing
    Beta 4.
-   Uninstallation removes downloaded map assets, which must then be downloaded
-   again.
+   Choose **Yes** when the uninstaller asks whether to keep downloaded maps and
+   user data, so the new installation can reuse them.
 2. Download the installer from one of the two official channels above.
 3. Run `TaxiNow-V1.0-Beta-4-Setup.exe`.
 4. Read and accept the EULA.
@@ -147,9 +147,10 @@ See the [License](LICENSE), [EULA](EULA.txt), [Disclaimer](DISCLAIMER.md), and
 Use **Windows Settings → Apps → Installed apps → TaxiNow → Uninstall**, or the
 TaxiNow uninstall shortcut in the Start menu.
 
-Uninstallation permanently removes the application and TaxiNow data in the
-active storage location, including downloaded maps, databases, caches,
-settings, and logs. Back up anything you intend to retain first.
+Uninstallation always removes the application. It then asks whether to retain
+downloaded maps and user data. Choose **Yes** (recommended for upgrades) to
+reuse maps and settings after reinstalling, or **No** to permanently delete
+TaxiNow databases, caches, settings, logs, and downloaded assets.
 
 ### Troubleshooting
 
@@ -211,7 +212,7 @@ TaxiNow 仅限个人模拟飞行使用，严禁用于真实飞行、真实导航
 ### 安装方法
 
 1. 如果已经安装旧版 TaxiNow，请先卸载旧版本，再安装 Beta 4。
-   卸载会删除已下载的地图资源，安装后需要重新下载。
+   卸载器询问是否保留地图和用户数据时请选择 **“是”**，新版安装后即可继续使用。
 2. 从上述两个官方渠道之一下载安装程序。
 3. 运行 `TaxiNow-V1.0-Beta-4-Setup.exe`。
 4. 阅读并同意最终用户许可协议。
@@ -269,8 +270,9 @@ TaxiNow 是受版权保护的软件，不是开源或公有领域软件。软件
 通过 **Windows 设置 → 应用 → 已安装的应用 → TaxiNow → 卸载**，或使用开始
 菜单中的 TaxiNow 卸载快捷方式。
 
-卸载会永久删除程序及当前资源位置中的 TaxiNow 数据，包括已下载地图、数据库、
-缓存、设置和日志。请先备份需要保留的内容。
+卸载会删除 TaxiNow 程序，并询问是否保留已下载地图和用户数据。升级时建议选择
+**“是”**，重新安装后可继续使用地图与设置；选择 **“否”** 才会永久删除数据库、
+缓存、设置、日志和已下载资源。
 
 ### 常见问题
 
