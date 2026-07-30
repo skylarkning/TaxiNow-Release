@@ -74,10 +74,13 @@ release.
 
 ### Installation
 
-1. Download the installer from one of the two official channels above.
-2. Run `TaxiNow-V1.0-Beta-2-Setup.exe`.
-3. Read and accept the EULA.
-4. Complete setup and launch TaxiNow.
+1. If TaxiNow V1.0 Beta is installed, uninstall it before installing Beta 2.
+   Uninstallation removes downloaded map assets, which must then be downloaded
+   again.
+2. Download the installer from one of the two official channels above.
+3. Run `TaxiNow-V1.0-Beta-2-Setup.exe`.
+4. Read and accept the EULA.
+5. Complete setup and launch TaxiNow.
 
 TaxiNow installs for the current Windows user and normally does not require
 administrator privileges. Required Windows components are detected or
@@ -200,10 +203,12 @@ TaxiNow 仅限个人模拟飞行使用，严禁用于真实飞行、真实导航
 
 ### 安装方法
 
-1. 从上述两个官方渠道之一下载安装程序。
-2. 运行 `TaxiNow-V1.0-Beta-2-Setup.exe`。
-3. 阅读并同意最终用户许可协议。
-4. 完成安装并启动 TaxiNow。
+1. 如果已经安装 TaxiNow V1.0 Beta，请先卸载旧版本，再安装 Beta 2。
+   卸载会删除已下载的地图资源，安装后需要重新下载。
+2. 从上述两个官方渠道之一下载安装程序。
+3. 运行 `TaxiNow-V1.0-Beta-2-Setup.exe`。
+4. 阅读并同意最终用户许可协议。
+5. 完成安装并启动 TaxiNow。
 
 TaxiNow 按当前 Windows 用户安装，通常不需要管理员权限。必要的 Windows
 组件会由安装程序自动检测或安装。
