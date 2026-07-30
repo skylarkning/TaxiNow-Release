@@ -2,7 +2,7 @@
   <img src="assets/taxinow-logo.png" width="540" alt="TaxiNow" />
 </p>
 
-# TaxiNow V1.0 Beta 3
+# TaxiNow V1.0 Beta 4
 
 **[English](#english) | [中文](#中文)**
 
@@ -60,10 +60,12 @@ Official MSFS 2020 support will be added in a future update.
 - Live aircraft ground position and heading through SimConnect
 - Simulator connection and synchronization status
 - Manual position refresh
+- English and Simplified Chinese interface
 - Airport search and quick ICAO map acquisition
 - Map acquisition by ICAO, Country/Region, or Province/State
 - Configurable parallel acquisitions: 1, 2, 4, 8, or 16
 - Progress, speed, elapsed time, and estimated remaining time
+- Human-readable Chinese province and Japanese prefecture names
 - Map library grouped by Country/Region → Province/State → Airport
 - Storage usage, free-space information, and customizable storage location
 - Optional access from another device on the same trusted local network
@@ -75,11 +77,11 @@ release.
 ### Installation
 
 1. If an earlier TaxiNow version is installed, uninstall it before installing
-   Beta 3.
+   Beta 4.
    Uninstallation removes downloaded map assets, which must then be downloaded
    again.
 2. Download the installer from one of the two official channels above.
-3. Run `TaxiNow-V1.0-Beta-3-Setup.exe`.
+3. Run `TaxiNow-V1.0-Beta-4-Setup.exe`.
 4. Read and accept the EULA.
 5. Complete setup and launch TaxiNow.
 
@@ -162,7 +164,9 @@ settings, and logs. Back up anything you intend to retain first.
 - **Missing aircraft icon:** select the correct airport and confirm the
   synchronization status is green.
 - **Slow map acquisition:** reduce parallel tasks to 1, 2, or 4 and retry
-  later.
+  later. OSM normally takes 5–30 seconds; busy or complex airports can take
+  30–90 seconds. TaxiNow marks an unchanged request as stalled after 45
+  seconds and stops waiting for OSM after 120 seconds.
 
 ---
 
@@ -191,10 +195,12 @@ TaxiNow 仅限个人模拟飞行使用，严禁用于真实飞行、真实导航
 - 通过 SimConnect 显示飞机地面位置和航向
 - 模拟器连接及位置同步状态
 - 手动刷新飞机位置
+- 英文与简体中文界面
 - 机场搜索及 ICAO 快速地图获取
 - 按 ICAO、国家/地区或省/州获取地图
 - 支持 1、2、4、8、16 个并行任务
 - 显示进度、速度、已用时间和预计剩余时间
+- 中国省级行政区与日本都道府县使用可读名称显示
 - 按“国家/地区 → 省/州 → 机场”管理地图库
 - 显示资源占用、剩余空间并支持自定义保存位置
 - 可选的同一可信局域网内其他设备访问
@@ -204,10 +210,10 @@ TaxiNow 仅限个人模拟飞行使用，严禁用于真实飞行、真实导航
 
 ### 安装方法
 
-1. 如果已经安装旧版 TaxiNow，请先卸载旧版本，再安装 Beta 3。
+1. 如果已经安装旧版 TaxiNow，请先卸载旧版本，再安装 Beta 4。
    卸载会删除已下载的地图资源，安装后需要重新下载。
 2. 从上述两个官方渠道之一下载安装程序。
-3. 运行 `TaxiNow-V1.0-Beta-3-Setup.exe`。
+3. 运行 `TaxiNow-V1.0-Beta-4-Setup.exe`。
 4. 阅读并同意最终用户许可协议。
 5. 完成安装并启动 TaxiNow。
 
@@ -274,7 +280,12 @@ TaxiNow 是受版权保护的软件，不是开源或公有领域软件。软件
 - **模拟器状态为红色：**启动 MSFS 2024 并进入飞行，必要时重新启动 TaxiNow。
 - **模拟器状态为橙色：**等待飞行完全加载并保持飞机在地面，然后刷新位置。
 - **没有飞机图标：**选择正确机场并确认同步状态为绿色。
-- **地图获取较慢：**将并行任务降低到 1、2 或 4，并稍后重试。
+- **地图获取较慢：**将并行任务降低到 1、2 或 4，并稍后重试。OSM
+  通常需要 5–30 秒，繁忙或复杂机场可能需要 30–90 秒。连续 45
+  秒无有效进展时 TaxiNow 会标记为疑似卡住，等待 OSM 的最长时间为
+  120 秒。中国大陆用户如果持续遇到连接重置或超时（部分中国电信线路
+  尤其明显），可更换网络，或在遵守当地法律及服务条款的前提下使用可靠的
+  VPN/网络加速服务后重试。
 
 ---
 

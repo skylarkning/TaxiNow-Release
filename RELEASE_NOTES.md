@@ -1,27 +1,63 @@
-# TaxiNow V1.0 Beta 3
+# TaxiNow V1.0 Beta 4
 
 ## English
 
-> **Important:** Uninstall any earlier TaxiNow version before installing Beta 3.
+> **Important:** Uninstall any earlier TaxiNow version before installing Beta 4.
 > The uninstaller removes downloaded map assets, so those maps must be
 > downloaded again after installation.
 
-### Short changelog
+### Changelog
 
-- Keeps OpenStreetMap as the preferred source during parallel country/region
-  downloads by queueing requests instead of falling back after 25 seconds.
-- Waits through short Overpass endpoint cooldowns without excessive polling or
-  CPU use.
-- Retries OSM sooner after a temporary Gateway or OurAirports fallback.
-- Retains Gateway and OurAirports only as fallbacks when OSM is unavailable or
-  lacks sufficient airport detail.
+- Keeps OpenStreetMap as the preferred detailed-map source while reducing
+  response time with smaller runway-based requests, adaptive endpoint
+  selection, and endpoint cooldowns.
+- Adds a clear 120-second OSM wait limit, visible **Stalled** and **Failed**
+  states, and in-app guidance for normal and abnormal download times.
+- Bundles the airport/runway catalog, adds a second catalog mirror, and reuses
+  a stale local catalog when the network is reset or unavailable. This avoids
+  many first-run `WinError 10054` failures.
+- Removes isolated nearby-airport and heliport geometry that could make
+  **Fit airport** zoom too far out, including the reported KLGA and KDCA cases.
+- Adds an English / Simplified Chinese language selector and localized app,
+  map controls, download manager, asset library, status text, welcome screen,
+  and About page.
+- Shows names such as Beijing and Tokyo instead of codes such as `CN-11` and
+  `JP-13` in the downloaded-asset hierarchy.
+- Moves **Fit airport** into an icon above the position-refresh and zoom
+  controls, and renames **Asset storage** to **Downloaded Asset**.
 
 TaxiNow is free for personal, non-commercial flight-simulation use and is
 provided **“AS IS”**, without warranties of any kind. It must not be used for
 real-world navigation. Please read the repository introduction, license, EULA,
 and disclaimer before installation.
 
-### Acknowledgements and credits
+## 中文
+
+> **重要：**安装 Beta 4 前，请先卸载任何旧版 TaxiNow。卸载程序会删除已下载的
+> 地图资源，因此安装完成后需要重新下载地图。
+
+### 更新日志
+
+- 继续优先使用 OpenStreetMap 详细地图数据，同时通过基于跑道范围的更小请求、
+  自适应节点选择和节点冷却机制改善响应速度。
+- OSM 最长等待时间明确为 120 秒；新增清晰的“疑似卡住”和“失败”状态，并在
+  下载页面说明正常与异常的等待时间。
+- 内置机场与跑道目录，增加第二个目录镜像，并在网络重置或不可用时复用本地旧
+  目录，减少首次运行时的 `WinError 10054` 错误。
+- 过滤附近其他机场或直升机场的孤立图形，修复 KLGA、KDCA 等机场“适配机场范围”
+  缩放过远的问题。
+- 新增英文 / 简体中文切换，应用界面、地图控制、下载管理、资源库、状态文字、
+  欢迎界面和关于页面均支持中文。
+- 已下载资源层级会显示“北京市”“东京都”等实际名称，不再只显示 `CN-11`、
+  `JP-13` 等代码。
+- “适配机场范围”改为位于位置刷新和缩放按钮上方的图标按钮；“Asset storage”
+  更名为“Downloaded Asset（已下载资源）”。
+
+TaxiNow 完全免费，仅供个人、非商业模拟飞行使用，并按“现状”提供，不作任何
+形式的担保。严禁用于真实飞行导航。安装前请阅读仓库介绍、许可协议、最终用户
+许可协议及免责声明。
+
+## Acknowledgements and credits / 致谢与 Credits
 
 TaxiNow thanks the contributors and maintainers of the following data sources,
 projects, and technologies:
@@ -39,59 +75,10 @@ projects, and technologies:
 - [Microsoft .NET](https://github.com/dotnet/runtime),
   [ASP.NET Core SignalR](https://github.com/dotnet/aspnetcore),
   [WebView2](https://developer.microsoft.com/microsoft-edge/webview2/), and the
-  Microsoft Flight Simulator SimConnect SDK — application runtime, live
-  updates, Windows interface, and simulator integration.
-- [SQLite](https://www.sqlite.org/) and
-  [SQLitePCLRaw](https://github.com/ericsink/SQLitePCL.raw) — local asset
-  storage.
-- [PyInstaller](https://pyinstaller.org/) and
-  [Inno Setup](https://jrsoftware.org/isinfo.php) — Windows packaging and
-  installation.
+  Microsoft Flight Simulator SimConnect SDK.
+- [SQLite](https://www.sqlite.org/), [SQLitePCLRaw](https://github.com/ericsink/SQLitePCL.raw),
+  [PyInstaller](https://pyinstaller.org/), and
+  [Inno Setup](https://jrsoftware.org/isinfo.php).
 
 Each third-party component or dataset remains subject to its own license and
-terms. See the repository
-[NOTICE](https://github.com/skylarkning/TaxiNow-Release/blob/main/NOTICE) for
-the formal data notices.
-
-## 中文
-
-> **重要：**安装 Beta 3 前，请先卸载任何旧版 TaxiNow。卸载程序会删除已下载的
-> 地图资源，因此安装完成后需要重新下载地图。
-
-### 简短更新日志
-
-- 国家/地区并行下载时延长 OSM 请求排队时间，不再等待 25 秒后过早切换来源。
-- Overpass 服务短暂冷却时继续低资源等待，避免频繁轮询。
-- 临时使用 Gateway 或 OurAirports 后会更快重试 OSM。
-- 仅在 OSM 不可用或机场数据不足时使用 Gateway 与 OurAirports 作为后备来源。
-
-TaxiNow 完全免费，仅供个人、非商业模拟飞行使用，并按“现状”提供，不作任何形式的担保。
-严禁用于真实飞行导航。安装前请阅读仓库介绍、许可协议、最终用户许可协议及免责声明。
-
-### 致谢与 Credits
-
-TaxiNow 感谢以下数据来源、项目、技术的贡献者与维护者：
-
-- [OpenStreetMap 贡献者](https://www.openstreetmap.org/copyright) —
-  依据 ODbL 提供机场地图数据。
-- [OurAirports](https://ourairports.com/data/) — 提供公有领域机场及跑道数据集。
-- [X-Plane Scenery Gateway](https://gateway.x-plane.com/) —
-  提供后备机场布局数据。
-- [SkyCharts](https://github.com/skylarkning/SkyCharts) —
-  提供机场地图视觉规范与绘制方式参考。
-- [MapLibre GL JS](https://github.com/maplibre/maplibre-gl-js) —
-  提供交互式地图绘制能力。
-- [Microsoft .NET](https://github.com/dotnet/runtime)、
-  [ASP.NET Core SignalR](https://github.com/dotnet/aspnetcore)、
-  [WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) 及
-  Microsoft Flight Simulator SimConnect SDK —
-  用于程序运行、实时更新、Windows 界面及模拟器连接。
-- [SQLite](https://www.sqlite.org/) 与
-  [SQLitePCLRaw](https://github.com/ericsink/SQLitePCL.raw) —
-  用于本地资源存储。
-- [PyInstaller](https://pyinstaller.org/) 与
-  [Inno Setup](https://jrsoftware.org/isinfo.php) —
-  用于 Windows 打包及安装程序制作。
-
-各第三方组件及数据集仍分别受其自身许可证及条款约束。正式数据声明请参阅
-[NOTICE](https://github.com/skylarkning/TaxiNow-Release/blob/main/NOTICE)。
+terms. See [NOTICE](NOTICE) for the formal notices.
