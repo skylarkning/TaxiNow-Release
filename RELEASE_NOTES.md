@@ -29,9 +29,10 @@
   Chinese About page, adds a globe language menu, and makes the long Chinese
   download-help bubble scroll safely within the window.
 - Beta 4 update: suppresses unreliable whole-country ETAs until enough
-  airports have completed, explains the expected duration of large country
-  downloads, and conditionally supplements incomplete OSM terminal coverage
-  with X-Plane terminal footprints while keeping OSM primary.
+  airports have completed, gives realistic time ranges for large batches,
+  recommends province/state filters to reduce the scope, and conditionally
+  supplements incomplete OSM terminal coverage with X-Plane terminal
+  footprints while keeping OSM primary.
 - Beta 4 update: the uninstaller now defaults to preserving downloaded maps
   and user data for upgrades, with an explicit option to delete everything.
 
@@ -63,8 +64,9 @@ and disclaimer before installation.
   更名为“Downloaded Asset（已下载资源）”。
 - Beta 4 更新：恢复固定的英中双语欢迎页，补全中文“关于”页，语言按钮改为地球仪
   下拉菜单，并让较长的中文下载说明气泡在窗口内安全滚动。
-- Beta 4 更新：整国下载完成足够机场样本前不再显示不可靠的夸张 ETA；新增整国下载
-  时间提示；在 OSM 航站楼覆盖不完整时仅补充 X-Plane 航站楼轮廓，仍保持 OSM 优先。
+- Beta 4 更新：整国下载完成足够机场样本前不再显示不可靠的夸张 ETA；改用现实的
+  批量下载时间区间并建议填写省/州缩小范围；在 OSM 航站楼覆盖不完整时仅补充
+  X-Plane 航站楼轮廓，仍保持 OSM 优先。
 - Beta 4 更新：卸载器默认保留已下载地图和用户数据以便升级复用，同时提供彻底删除选项。
 
 TaxiNow 完全免费，仅供个人、非商业模拟飞行使用，并按“现状”提供，不作任何
