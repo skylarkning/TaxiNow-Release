@@ -2,7 +2,7 @@
   <img src="assets/taxinow-logo.png" width="540" alt="TaxiNow" />
 </p>
 
-# TaxiNow V1.0 Beta
+# TaxiNow V1.0 Beta 2
 
 **[English](#english) | [中文](#中文)**
 
@@ -75,7 +75,7 @@ release.
 ### Installation
 
 1. Download the installer from one of the two official channels above.
-2. Run `TaxiNow-V1.0-Beta-Setup.exe`.
+2. Run `TaxiNow-V1.0-Beta-2-Setup.exe`.
 3. Read and accept the EULA.
 4. Complete setup and launch TaxiNow.
 
@@ -201,7 +201,7 @@ TaxiNow 仅限个人模拟飞行使用，严禁用于真实飞行、真实导航
 ### 安装方法
 
 1. 从上述两个官方渠道之一下载安装程序。
-2. 运行 `TaxiNow-V1.0-Beta-Setup.exe`。
+2. 运行 `TaxiNow-V1.0-Beta-2-Setup.exe`。
 3. 阅读并同意最终用户许可协议。
 4. 完成安装并启动 TaxiNow。
 
