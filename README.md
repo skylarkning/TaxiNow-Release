@@ -63,7 +63,7 @@ Official MSFS 2020 support will be added in a future update.
 - English and Simplified Chinese interface
 - Airport search and quick ICAO map acquisition
 - Map acquisition by ICAO, Country/Region, or Province/State
-- Configurable parallel acquisitions: 1, 2, 4, 8, or 16
+- Configurable batch workers: 1, 2, 4, 8, or 16; use 1 for public OSM
 - Progress, speed, elapsed time, and estimated remaining time
 - Human-readable Chinese province and Japanese prefecture names
 - Map library grouped by Country/Region → Province/State → Airport
@@ -164,8 +164,9 @@ TaxiNow databases, caches, settings, logs, and downloaded assets.
   wait briefly, and use position refresh.
 - **Missing aircraft icon:** select the correct airport and confirm the
   synchronization status is green.
-- **Slow map acquisition:** reduce parallel tasks to 1, 2, or 4 and retry
-  later. OSM normally takes 5–30 seconds; busy or complex airports can take
+- **Slow map acquisition:** use 1 batch worker and retry later. Public OSM
+  server-side processing is often slower when several requests compete for
+  the same per-user slots. OSM normally takes 5–30 seconds; busy airports can take
   30–90 seconds. TaxiNow marks an unchanged request as stalled after 45
   seconds and stops waiting for OSM after 120 seconds.
 
@@ -199,7 +200,7 @@ TaxiNow 仅限个人模拟飞行使用，严禁用于真实飞行、真实导航
 - 英文与简体中文界面
 - 机场搜索及 ICAO 快速地图获取
 - 按 ICAO、国家/地区或省/州获取地图
-- 支持 1、2、4、8、16 个并行任务
+- 支持 1、2、4、8、16 个批量任务工作线程；公共 OSM 推荐使用 1
 - 显示进度、速度、已用时间和预计剩余时间
 - 中国省级行政区与日本都道府县使用可读名称显示
 - 按“国家/地区 → 省/州 → 机场”管理地图库
@@ -282,8 +283,9 @@ TaxiNow 是受版权保护的软件，不是开源或公有领域软件。软件
 - **模拟器状态为红色：**启动 MSFS 2024 并进入飞行，必要时重新启动 TaxiNow。
 - **模拟器状态为橙色：**等待飞行完全加载并保持飞机在地面，然后刷新位置。
 - **没有飞机图标：**选择正确机场并确认同步状态为绿色。
-- **地图获取较慢：**将并行任务降低到 1、2 或 4，并稍后重试。OSM
-  通常需要 5–30 秒，繁忙或复杂机场可能需要 30–90 秒。连续 45
+- **地图获取较慢：**选择 1 个批量任务工作线程并稍后重试。公共 OSM
+  会按用户分配请求槽位，同时发送更多请求往往反而更慢。OSM 通常需要
+  5–30 秒，繁忙或复杂机场可能需要 30–90 秒。连续 45
   秒无有效进展时 TaxiNow 会标记为疑似卡住，等待 OSM 的最长时间为
   120 秒。中国大陆用户如果持续遇到连接重置或超时（部分中国电信线路
   尤其明显），可更换网络，或在遵守当地法律及服务条款的前提下使用可靠的

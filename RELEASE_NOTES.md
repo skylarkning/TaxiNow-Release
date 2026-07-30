@@ -35,6 +35,14 @@
   footprints while keeping OSM primary.
 - Beta 4 update: the uninstaller now defaults to preserving downloaded maps
   and user data for upgrades, with an explicit option to delete everything.
+- Beta 4 update: fixes KDCA Terminal 1 and similar partial-terminal cases by
+  retrying a small OSM terminal-detail query when a named terminal has no
+  nearby footprint. Missing gate clusters are now checked independently, and
+  old OSM map caches are refreshed automatically.
+- Beta 4 update: changes the recommended batch worker count to **1** and
+  serializes public OSM requests. Higher parallel values were frequently
+  slower because public Overpass services use per-user slots and cooldowns;
+  they remain available for cache, conversion, and fallback work.
 
 TaxiNow is free for personal, non-commercial flight-simulation use and is
 provided **“AS IS”**, without warranties of any kind. It must not be used for
@@ -68,6 +76,12 @@ and disclaimer before installation.
   批量下载时间区间并建议填写省/州缩小范围；在 OSM 航站楼覆盖不完整时仅补充
   X-Plane 航站楼轮廓，仍保持 OSM 优先。
 - Beta 4 更新：卸载器默认保留已下载地图和用户数据以便升级复用，同时提供彻底删除选项。
+- Beta 4 更新：修复 KDCA Terminal 1 及类似的局部航站楼缺失问题；当有航站楼名称点
+  却没有附近建筑轮廓时，会执行一次小范围 OSM 航站楼补查，并按登机口簇独立检查
+  次要航站楼是否缺失。旧版 OSM 地图缓存会自动刷新。
+- Beta 4 更新：批量任务推荐值改为 **1**，并串行发送公共 OSM 请求。公共 Overpass
+  会按用户设置请求槽位和冷却时间，因此较高并行数经常更慢；其他选项仍可用于缓存、
+  转换及后备来源处理。
 
 TaxiNow 完全免费，仅供个人、非商业模拟飞行使用，并按“现状”提供，不作任何
 形式的担保。严禁用于真实飞行导航。安装前请阅读仓库介绍、许可协议、最终用户
