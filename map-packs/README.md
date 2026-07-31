@@ -1,30 +1,28 @@
 # TaxiNow regional map packs / TaxiNow 地区地图包
 
 TaxiNow regional map packs are official, versioned offline-map bundles
-published by **skylarkning**. The application downloads them directly from the
-TaxiNow-Release GitHub release assets, verifies SHA-256 checksums, and falls
-back to on-demand map sources for airports that are not yet packaged.
+published by **skylarkning**. TaxiNow downloads a pack only when it is listed
+in [`index.json`](index.json), verifies its SHA-256 checksum, and falls back to
+on-demand sources when no complete pack is available.
 
-TaxiNow 地区地图包是由 **skylarkning** 发布的官方版本化离线地图包。应用会从
-TaxiNow-Release 的 GitHub Release 资产中直接下载，校验 SHA-256；尚未包含在地图包
-中的机场会自动回退到按需数据源。
+TaxiNow 地区地图包是由 **skylarkning** 发布的官方版本化离线地图包。TaxiNow
+只会下载 [`index.json`](index.json) 中列出的地图包，并验证 SHA-256 校验值；
+当没有完整地图包时，软件会回退到按需数据源。
 
-The initial Beta 4 pilot covers:
+## Current availability / 当前可用情况
 
-- `CA-BC`: CYVR
-- `US-DC`: KDCA
+No regional map packs are currently published. The incomplete Beta 4 pilot
+packs for `CA-BC` and `US-DC` were withdrawn because they did not meet the
+required terminal-completeness standard. They must not be treated as complete
+province/state packages.
 
-These pilot packs validate the download/import architecture and the updated
-terminal-geometry fusion rules. They are not yet complete province/state
-collections. Larger Geofabrik-based packs will be added incrementally.
+目前没有已发布的地区地图包。Beta 4 的 `CA-BC` 与 `US-DC` 不完整试点包因未达到
+航站楼完整性标准而被撤回，不应再被视为完整的省/州地图包。
 
-首批 Beta 4 试点地图包包括：
+Future packs will be listed only after the covered region and generated airport
+maps pass the release quality checks.
 
-- `CA-BC`：CYVR
-- `US-DC`：KDCA
-
-试点包用于验证下载/导入架构及新版航站楼图形融合规则，目前并非完整省/州机场合集。
-后续将逐步加入基于 Geofabrik 地区数据构建的完整地图包。
+未来的地图包仅会在覆盖范围与生成的机场地图通过发布质量检查后加入清单。
 
 Map data remains subject to the source licenses and attribution shown by
 TaxiNow, including OpenStreetMap contributors under ODbL. See the repository
