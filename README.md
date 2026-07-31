@@ -2,7 +2,7 @@
   <img src="assets/taxinow-logo.png" width="540" alt="TaxiNow" />
 </p>
 
-# TaxiNow V1.0 Beta 4
+# TaxiNow V1.0 Beta 5 (Build 102)
 
 **[English](#english) | [中文](#中文)**
 
@@ -73,7 +73,7 @@ Official MSFS 2020 support will be added in a future update.
 - Optional access from another device on the same trusted local network
 - Minimize-to-tray support
 
-Beta 4 uses continuous OSM and available FAA building footprints ahead of
+Beta 5 uses continuous OSM and available FAA building footprints ahead of
 modular X-Plane facade pieces. Preprocessed packs can additionally use
 strictly filtered Overture and Microsoft global building footprints. Complete
 parent-building outlines suppress overlapping building parts, and reliable
@@ -85,8 +85,11 @@ TaxiNow now includes a repeatable worldwide preprocessing pipeline that splits
 large countries by available province/state extracts and publishes bounded,
 resumable, checksum-verified shards. A country becomes a fast batch download
 after its generated packs are uploaded to the official index; countries not
-yet published continue to use the slower on-demand fallback. The initial pilot
-covers CYVR (`CA-BC`) and KDCA (`US-DC`).
+yet published continue to use the slower on-demand fallback. Incomplete pilot
+packs have been withdrawn and will not be offered to TaxiNow clients.
+
+Beta 4 is intentionally skipped as a public upgrade target. Its work and the
+additional fixes completed afterward are consolidated into Beta 5 Build 102.
 
 Taxi-route calculation and turn-by-turn instructions are not included in this
 release.
@@ -94,11 +97,11 @@ release.
 ### Installation
 
 1. If an earlier TaxiNow version is installed, uninstall it before installing
-   Beta 4.
+   Beta 5 Build 102.
    Choose **Yes** when the uninstaller asks whether to keep downloaded maps and
    user data, so the new installation can reuse them.
 2. Download the installer from one of the two official channels above.
-3. Run `TaxiNow-V1.0-Beta-4-Setup.exe`.
+3. Run `TaxiNow-V1.0-Beta-5-Build-102-Setup.exe`.
 4. Read and accept the EULA.
 5. Complete setup and launch TaxiNow.
 
@@ -235,7 +238,7 @@ TaxiNow 仅限个人模拟飞行使用，严禁用于真实飞行、真实导航
 - 可选的同一可信局域网内其他设备访问
 - 支持最小化到系统托盘
 
-Beta 4 会优先使用连续的 OSM 及可用 FAA 建筑轮廓，不再让 X-Plane 模块化外墙
+Beta 5 Build 102 会优先使用连续的 OSM 及可用 FAA 建筑轮廓，不再让 X-Plane 模块化外墙
 片段覆盖权威航站楼图形。预处理地图包还可严格筛选 Overture 与 Microsoft 全球
 建筑轮廓；完整父建筑会压制重叠的建筑分块，可信的邻近航站楼/指廊名称会自动
 传递到已接受的无名轮廓，从而尽量改善航站楼支离破碎、形状或标注缺失的问题。
@@ -243,16 +246,15 @@ Beta 4 会优先使用连续的 OSM 及可用 FAA 建筑轮廓，不再让 X-Pla
 TaxiNow 现已包含可重复的全球预处理流水线，可按照可用的省/州提取包拆分大型国家，
 并生成可断点续传、可并行且经过校验的有限大小分片。某个国家的地图包上传至官方
 索引后，按国家下载才会进入高速路径；尚未发布地图包的国家仍使用较慢的按需回退。
-首批试点包含 CYVR（`CA-BC`）与 KDCA（`US-DC`）。
 
 本版本不包含滑行路线计算或逐步滑行指引。
 
 ### 安装方法
 
-1. 如果已经安装旧版 TaxiNow，请先卸载旧版本，再安装 Beta 4。
+1. 如果已经安装旧版 TaxiNow，请先卸载旧版本，再安装 Beta 5 Build 102。
    卸载器询问是否保留地图和用户数据时请选择 **“是”**，新版安装后即可继续使用。
 2. 从上述两个官方渠道之一下载安装程序。
-3. 运行 `TaxiNow-V1.0-Beta-4-Setup.exe`。
+3. 运行 `TaxiNow-V1.0-Beta-5-Build-102-Setup.exe`。
 4. 阅读并同意最终用户许可协议。
 5. 完成安装并启动 TaxiNow。
 
