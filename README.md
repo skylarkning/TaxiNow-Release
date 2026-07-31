@@ -64,12 +64,20 @@ Official MSFS 2020 support will be added in a future update.
 - Airport search and quick ICAO map acquisition
 - Map acquisition by ICAO, Country/Region, or Province/State
 - Configurable batch workers: 1, 2, 4, 8, or 16; use 1 for public OSM
+- Verified, resumable regional map packs when available, with automatic
+  on-demand fallback for missing airports
 - Progress, speed, elapsed time, and estimated remaining time
 - Human-readable Chinese province and Japanese prefecture names
 - Map library grouped by Country/Region → Province/State → Airport
 - Storage usage, free-space information, and customizable storage location
 - Optional access from another device on the same trusted local network
 - Minimize-to-tray support
+
+Beta 4 uses continuous OSM and available FAA building footprints ahead of
+modular X-Plane facade pieces. This improves fragmented terminals at airports
+such as CYVR while retaining Gateway taxi-route and parking-position detail.
+The initial regional-pack pilot covers CYVR (`CA-BC`) and KDCA (`US-DC`).
+Re-download either ICAO to replace an already installed older map.
 
 Taxi-route calculation and turn-by-turn instructions are not included in this
 release.
@@ -201,12 +209,18 @@ TaxiNow 仅限个人模拟飞行使用，严禁用于真实飞行、真实导航
 - 机场搜索及 ICAO 快速地图获取
 - 按 ICAO、国家/地区或省/州获取地图
 - 支持 1、2、4、8、16 个批量任务工作线程；公共 OSM 推荐使用 1
+- 存在官方地区地图包时支持校验、断点续传，并对未包含的机场自动按需回退
 - 显示进度、速度、已用时间和预计剩余时间
 - 中国省级行政区与日本都道府县使用可读名称显示
 - 按“国家/地区 → 省/州 → 机场”管理地图库
 - 显示资源占用、剩余空间并支持自定义保存位置
 - 可选的同一可信局域网内其他设备访问
 - 支持最小化到系统托盘
+
+Beta 4 会优先使用连续的 OSM 及可用 FAA 建筑轮廓，不再让 X-Plane 模块化外墙
+片段覆盖权威航站楼图形，从而改善 CYVR 等机场航站楼支离破碎的问题，同时保留
+Gateway 的滑行路线和停机位细节。首批地区地图包试点包含 CYVR（`CA-BC`）与
+KDCA（`US-DC`）。若已经安装旧地图，请按 ICAO 重新下载一次。
 
 本版本不包含滑行路线计算或逐步滑行指引。
 

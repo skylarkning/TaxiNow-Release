@@ -24,6 +24,28 @@ https://ourairports.com/data/
 X-Plane Scenery Gateway
 -----------------------
 
-When OpenStreetMap detail is unavailable, the map downloader can obtain airport
-layout data from the X-Plane Scenery Gateway.
+When authoritative map detail is unavailable, the map downloader can obtain
+taxi-route and parking-position detail from the X-Plane Scenery Gateway.
 https://gateway.x-plane.com/
+
+FAA Airport Mapping
+-------------------
+
+TaxiNow can use FAA Airport Mapping open data to supplement incomplete US
+airport building, taxiway, and apron geometry where the dataset has coverage.
+https://adds-faa.opendata.arcgis.com/
+
+Geofabrik
+---------
+
+TaxiNow's maintainer map-pack workflow can use regional OpenStreetMap extracts
+distributed by Geofabrik. The contained OSM data remains subject to ODbL.
+https://download.geofabrik.de/
+
+Overture Maps Foundation
+------------------------
+
+Maintainer-built map packs can optionally use Overture building footprints as
+a strictly filtered supplemental source. Each published pack must retain its
+applicable source attribution and license information.
+https://overturemaps.org/

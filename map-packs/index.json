@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-30T20:03:09-04:00",
+  "packs": [
+    {
+      "id": "ca-bc-pilot",
+      "version": "2026.07.30.1",
+      "countryCode": "CA",
+      "regionCode": "CA-BC",
+      "airportCount": 1,
+      "icaos": [
+        "CYVR"
+      ],
+      "sizeBytes": 62227,
+      "sha256": "0b22542b151fa5bb153230579221a39b8a1ca5c48213d275a79045bf45e2ca89",
+      "url": "https://github.com/skylarkning/TaxiNow-Release/releases/download/v1.0.0-beta.4/TaxiNow-MapPack-CA-BC-Pilot-2026-07-30.zip"
+    },
+    {
+      "id": "us-dc-pilot",
+      "version": "2026.07.30.1",
+      "countryCode": "US",
+      "regionCode": "US-DC",
+      "airportCount": 1,
+      "icaos": [
+        "KDCA"
+      ],
+      "sizeBytes": 38941,
+      "sha256": "5882c290835b0121598e62735572b01b114e48781e0d661091ea12cae76ae46d",
+      "url": "https://github.com/skylarkning/TaxiNow-Release/releases/download/v1.0.0-beta.4/TaxiNow-MapPack-US-DC-Pilot-2026-07-30.zip"
+    }
+  ]
+}

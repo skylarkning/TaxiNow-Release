@@ -43,6 +43,13 @@
   serializes public OSM requests. Higher parallel values were frequently
   slower because public Overpass services use per-user slots and cooldowns;
   they remain available for cache, conversion, and fallback work.
+- Beta 4 update: fixes fragmented terminal buildings such as CYVR by using
+  continuous OSM/FAA building footprints ahead of modular X-Plane facade
+  pieces. Gateway remains available for taxi routes and parking positions.
+  Adds verified, resumable regional map-pack support with SHA-256 validation
+  and automatic on-demand fallback. Initial pilot packs cover CYVR (`CA-BC`)
+  and KDCA (`US-DC`); users should re-download those ICAOs to replace an
+  already installed older map.
 
 TaxiNow is free for personal, non-commercial flight-simulation use and is
 provided **“AS IS”**, without warranties of any kind. It must not be used for
@@ -82,6 +89,10 @@ and disclaimer before installation.
 - Beta 4 更新：批量任务推荐值改为 **1**，并串行发送公共 OSM 请求。公共 Overpass
   会按用户设置请求槽位和冷却时间，因此较高并行数经常更慢；其他选项仍可用于缓存、
   转换及后备来源处理。
+- Beta 4 更新：修复 CYVR 等机场航站楼支离破碎的问题。连续的 OSM/FAA 建筑轮廓
+  现在优先于 X-Plane 模块化外墙片段，Gateway 仍可补充滑行路线和停机位。新增带
+  SHA-256 校验、断点续传及按需回退的地区地图包支持；首批试点包含 CYVR
+  (`CA-BC`) 与 KDCA (`US-DC`)。已经安装旧地图的用户需要按 ICAO 重新下载一次。
 
 TaxiNow 完全免费，仅供个人、非商业模拟飞行使用，并按“现状”提供，不作任何
 形式的担保。严禁用于真实飞行导航。安装前请阅读仓库介绍、许可协议、最终用户
@@ -96,6 +107,12 @@ projects, and technologies:
   airport map data made available under the ODbL.
 - [OurAirports](https://ourairports.com/data/) — public-domain airport and
   runway datasets.
+- [FAA Airport Mapping Open Data](https://adds-faa.opendata.arcgis.com/) —
+  authoritative US airport-building and airfield geometry where available.
+- [Geofabrik](https://download.geofabrik.de/) — regional OpenStreetMap extracts
+  used by the maintainer map-pack workflow.
+- [Overture Maps Foundation](https://overturemaps.org/) — optional building
+  footprint supplementation for maintainer-built packs.
 - [X-Plane Scenery Gateway](https://gateway.x-plane.com/) — fallback airport
   layout data.
 - [SkyCharts](https://github.com/skylarkning/SkyCharts) — airport-map visual
