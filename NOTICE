@@ -45,7 +45,16 @@ https://download.geofabrik.de/
 Overture Maps Foundation
 ------------------------
 
-Maintainer-built map packs can optionally use Overture building footprints as
-a strictly filtered supplemental source. Each published pack must retain its
-applicable source attribution and license information.
+Maintainer-built map packs can use Overture Buildings and Building Parts as a
+strictly filtered supplemental source. Overture data is made available under
+the Open Data Commons Open Database License (ODbL) 1.0. Each published pack
+retains applicable attribution and license information.
 https://overturemaps.org/
+
+Microsoft Global ML Building Footprints
+---------------------------------------
+
+Maintainer-built map packs can use Microsoft Global ML Building Footprints as
+a strictly filtered geometric fallback. The dataset is made available under
+the Community Data License Agreement - Permissive, Version 2.0.
+https://github.com/microsoft/GlobalMLBuildingFootprints

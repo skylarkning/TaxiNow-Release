@@ -50,6 +50,14 @@
   and automatic on-demand fallback. Initial pilot packs cover CYVR (`CA-BC`)
   and KDCA (`US-DC`); users should re-download those ICAOs to replace an
   already installed older map.
+- Beta 4 update: adds global country/subdivision preprocessing with bounded
+  pack shards, resume support, SHA-256 verification, automatic per-airport
+  quality reports, and failure isolation. Overture parent buildings and
+  Microsoft Global ML Building Footprints can supplement missing terminal
+  geometry; overlapping building parts are suppressed and trustworthy nearby
+  terminal names are propagated. The About page now documents that worldwide
+  airport-map correctness cannot be guaranteed and that no manual per-airport
+  correction database is maintained.
 
 TaxiNow is free for personal, non-commercial flight-simulation use and is
 provided **“AS IS”**, without warranties of any kind. It must not be used for
@@ -93,6 +101,11 @@ and disclaimer before installation.
   现在优先于 X-Plane 模块化外墙片段，Gateway 仍可补充滑行路线和停机位。新增带
   SHA-256 校验、断点续传及按需回退的地区地图包支持；首批试点包含 CYVR
   (`CA-BC`) 与 KDCA (`US-DC`)。已经安装旧地图的用户需要按 ICAO 重新下载一次。
+- Beta 4 更新：加入全球国家/省州地图包预处理、有限大小分片、断点续传、SHA-256
+  校验、逐机场质量报告和地区失败隔离。Overture 父建筑与 Microsoft 全球 ML
+  建筑轮廓可辅助补全航站楼；重叠建筑分块会被压制，可信的邻近航站楼名称会自动
+  传递。About 页面新增常见问题与技术限制，明确无法保证全球每座机场都正确绘制，
+  且不维护逐机场人工修正数据库。
 
 TaxiNow 完全免费，仅供个人、非商业模拟飞行使用，并按“现状”提供，不作任何
 形式的担保。严禁用于真实飞行导航。安装前请阅读仓库介绍、许可协议、最终用户
@@ -111,8 +124,10 @@ projects, and technologies:
   authoritative US airport-building and airfield geometry where available.
 - [Geofabrik](https://download.geofabrik.de/) — regional OpenStreetMap extracts
   used by the maintainer map-pack workflow.
-- [Overture Maps Foundation](https://overturemaps.org/) — optional building
-  footprint supplementation for maintainer-built packs.
+- [Overture Maps Foundation](https://overturemaps.org/) — supplemental
+  building footprints for maintainer-built packs.
+- [Microsoft Global ML Building Footprints](https://github.com/microsoft/GlobalMLBuildingFootprints)
+  — supplemental global building geometry.
 - [X-Plane Scenery Gateway](https://gateway.x-plane.com/) — fallback airport
   layout data.
 - [SkyCharts](https://github.com/skylarkning/SkyCharts) — airport-map visual

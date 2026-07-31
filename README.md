@@ -74,10 +74,19 @@ Official MSFS 2020 support will be added in a future update.
 - Minimize-to-tray support
 
 Beta 4 uses continuous OSM and available FAA building footprints ahead of
-modular X-Plane facade pieces. This improves fragmented terminals at airports
-such as CYVR while retaining Gateway taxi-route and parking-position detail.
-The initial regional-pack pilot covers CYVR (`CA-BC`) and KDCA (`US-DC`).
-Re-download either ICAO to replace an already installed older map.
+modular X-Plane facade pieces. Preprocessed packs can additionally use
+strictly filtered Overture and Microsoft global building footprints. Complete
+parent-building outlines suppress overlapping building parts, and reliable
+nearby terminal/concourse names are transferred to accepted unnamed
+footprints. This improves fragmented or missing terminals while retaining
+Gateway taxi-route and parking-position detail.
+
+TaxiNow now includes a repeatable worldwide preprocessing pipeline that splits
+large countries by available province/state extracts and publishes bounded,
+resumable, checksum-verified shards. A country becomes a fast batch download
+after its generated packs are uploaded to the official index; countries not
+yet published continue to use the slower on-demand fallback. The initial pilot
+covers CYVR (`CA-BC`) and KDCA (`US-DC`).
 
 Taxi-route calculation and turn-by-turn instructions are not included in this
 release.
@@ -178,6 +187,15 @@ TaxiNow databases, caches, settings, logs, and downloaded assets.
   30–90 seconds. TaxiNow marks an unchanged request as stalled after 45
   seconds and stops waiting for OSM after 120 seconds.
 
+### Airport-map limitations
+
+TaxiNow combines several imperfect datasets and cannot guarantee correct,
+complete, or current drawing for every airport worldwide. A building-footprint
+source may have no terminal name, while an aviation source may have a
+“Terminal X” point but no usable outline. TaxiNow matches trustworthy labels,
+gate clusters, and nearby geometry automatically, but does not invent terminal
+numbers and does not maintain manual per-airport drawing corrections.
+
 ---
 
 ## 中文
@@ -218,9 +236,14 @@ TaxiNow 仅限个人模拟飞行使用，严禁用于真实飞行、真实导航
 - 支持最小化到系统托盘
 
 Beta 4 会优先使用连续的 OSM 及可用 FAA 建筑轮廓，不再让 X-Plane 模块化外墙
-片段覆盖权威航站楼图形，从而改善 CYVR 等机场航站楼支离破碎的问题，同时保留
-Gateway 的滑行路线和停机位细节。首批地区地图包试点包含 CYVR（`CA-BC`）与
-KDCA（`US-DC`）。若已经安装旧地图，请按 ICAO 重新下载一次。
+片段覆盖权威航站楼图形。预处理地图包还可严格筛选 Overture 与 Microsoft 全球
+建筑轮廓；完整父建筑会压制重叠的建筑分块，可信的邻近航站楼/指廊名称会自动
+传递到已接受的无名轮廓，从而尽量改善航站楼支离破碎、形状或标注缺失的问题。
+
+TaxiNow 现已包含可重复的全球预处理流水线，可按照可用的省/州提取包拆分大型国家，
+并生成可断点续传、可并行且经过校验的有限大小分片。某个国家的地图包上传至官方
+索引后，按国家下载才会进入高速路径；尚未发布地图包的国家仍使用较慢的按需回退。
+首批试点包含 CYVR（`CA-BC`）与 KDCA（`US-DC`）。
 
 本版本不包含滑行路线计算或逐步滑行指引。
 
@@ -305,6 +328,13 @@ TaxiNow 是受版权保护的软件，不是开源或公有领域软件。软件
   尤其明显），可更换网络，或在遵守当地法律及服务条款的前提下使用可靠的
   VPN/网络加速服务后重试。
 
+### 机场地图技术限制
+
+TaxiNow 融合多种并不完美的数据源，无法保证全球每一座机场的绘制都正确、完整或
+保持最新。建筑轮廓数据可能没有航站楼名称，航空数据也可能只有“Terminal X”
+名称点而没有可用轮廓。TaxiNow 会自动匹配可信名称、登机口簇与邻近图形，但不会
+凭空编造航站楼编号，也不维护逐机场的人工绘图修正。
+
 ---
 
 ## Acknowledgements and credits / 致谢与 Credits
@@ -318,6 +348,18 @@ projects, and technologies. TaxiNow 感谢以下数据来源、项目、技术�
 - [OurAirports](https://ourairports.com/data/) — public-domain airport and
   runway datasets.<br>
   OurAirports——提供公有领域机场及跑道数据集。
+- [FAA Airport Mapping Open Data](https://adds-faa.opendata.arcgis.com/) —
+  authoritative US airport geometry where available.<br>
+  FAA Airport Mapping Open Data——在有覆盖时提供美国机场权威图形。
+- [Geofabrik](https://download.geofabrik.de/) — regional OpenStreetMap extracts
+  for preprocessing.<br>
+  Geofabrik——提供预处理所用的地区 OpenStreetMap 提取数据。
+- [Overture Maps Foundation](https://overturemaps.org/) — supplemental open
+  building footprints.<br>
+  Overture Maps Foundation——提供辅助开放建筑轮廓。
+- [Microsoft Global ML Building Footprints](https://github.com/microsoft/GlobalMLBuildingFootprints)
+  — supplemental global building geometry.<br>
+  Microsoft Global ML Building Footprints——提供辅助全球建筑图形。
 - [X-Plane Scenery Gateway](https://gateway.x-plane.com/) — fallback airport
   layout data.<br>
   X-Plane Scenery Gateway——提供后备机场布局数据。
