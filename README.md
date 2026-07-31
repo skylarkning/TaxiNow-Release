@@ -91,6 +91,10 @@ packs have been withdrawn and will not be offered to TaxiNow clients.
 Beta 4 is intentionally skipped as a public upgrade target. Its work and the
 additional fixes completed afterward are consolidated into Beta 5 Build 102.
 
+The maintainer-only TaxiNow Local Map Pack Builder is currently Build 103.
+Build 103 restores the bundled airport and runway catalogs omitted from its
+initial Build 102 installer; the main TaxiNow application remains Build 102.
+
 Taxi-route calculation and turn-by-turn instructions are not included in this
 release.
 
@@ -246,6 +250,9 @@ Beta 5 Build 102 会优先使用连续的 OSM 及可用 FAA 建筑轮廓，不�
 TaxiNow 现已包含可重复的全球预处理流水线，可按照可用的省/州提取包拆分大型国家，
 并生成可断点续传、可并行且经过校验的有限大小分片。某个国家的地图包上传至官方
 索引后，按国家下载才会进入高速路径；尚未发布地图包的国家仍使用较慢的按需回退。
+
+维护者专用的 TaxiNow Local Map Pack Builder 当前为 Build 103。该热修复补回了
+初版 Build 102 生成器安装包中误漏的机场和跑道目录；TaxiNow 主程序仍为 Build 102。
 
 本版本不包含滑行路线计算或逐步滑行指引。
 
