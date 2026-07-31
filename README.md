@@ -2,7 +2,7 @@
   <img src="assets/taxinow-logo.png" width="540" alt="TaxiNow" />
 </p>
 
-# TaxiNow V1.0 Beta 5 (Build 102)
+# TaxiNow V1.0 Beta 6 (Build 103)
 
 **[English](#english) | [中文](#中文)**
 
@@ -13,7 +13,7 @@
 
 Official TaxiNow releases are published only by **skylarkning** through:
 
-- the TaxiNow listing on [flightsim.to](https://flightsim.to/); and
+- the official [TaxiNow listing on flightsim.to](https://flightsim.to/addon/112712/taxinow); and
 - this [TaxiNow-Release repository](https://github.com/skylarkning/TaxiNow-Release)
   and its [Releases page](https://github.com/skylarkning/TaxiNow-Release/releases).
 
@@ -23,7 +23,7 @@ If you paid for it, the seller was not authorized by Sky Ning.
 
 TaxiNow 官方版本仅由 **skylarkning** 通过以下两处发布：
 
-- [flightsim.to](https://flightsim.to/) 上的 TaxiNow 官方页面；以及
+- [flightsim.to 上的 TaxiNow 官方页面](https://flightsim.to/addon/112712/taxinow)；以及
 - 本 [TaxiNow-Release 仓库](https://github.com/skylarkning/TaxiNow-Release)
   及其 [Releases 页面](https://github.com/skylarkning/TaxiNow-Release/releases)。
 
@@ -48,10 +48,7 @@ operational training.
 ### Simulator compatibility
 
 - **Microsoft Flight Simulator 2024:** tested and supported
-- **Microsoft Flight Simulator 2020:** may work, but has not completed
-  compatibility testing
-
-Official MSFS 2020 support will be added in a future update.
+- **Microsoft Flight Simulator 2020:** tested and supported
 
 ### Main features
 
@@ -73,7 +70,7 @@ Official MSFS 2020 support will be added in a future update.
 - Optional access from another device on the same trusted local network
 - Minimize-to-tray support
 
-Beta 5 uses continuous OSM and available FAA building footprints ahead of
+Beta 6 uses continuous OSM and available FAA building footprints ahead of
 modular X-Plane facade pieces. Preprocessed packs can additionally use
 strictly filtered Overture and Microsoft global building footprints. Complete
 parent-building outlines suppress overlapping building parts, and reliable
@@ -88,12 +85,10 @@ after its generated packs are uploaded to the official index; countries not
 yet published continue to use the slower on-demand fallback. Incomplete pilot
 packs have been withdrawn and will not be offered to TaxiNow clients.
 
-Beta 4 is intentionally skipped as a public upgrade target. Its work and the
-additional fixes completed afterward are consolidated into Beta 5 Build 102.
+Beta 4 was intentionally skipped as a public upgrade target. Its work and the
+additional fixes completed afterward were consolidated into Beta 5 Build 102.
 
-The maintainer-only TaxiNow Local Map Pack Builder is currently Build 103.
-Build 103 restores the bundled airport and runway catalogs omitted from its
-initial Build 102 installer; the main TaxiNow application remains Build 102.
+The maintainer-only TaxiNow Local Map Pack Builder is currently Build 105.
 
 Taxi-route calculation and turn-by-turn instructions are not included in this
 release.
@@ -101,11 +96,11 @@ release.
 ### Installation
 
 1. If an earlier TaxiNow version is installed, uninstall it before installing
-   Beta 5 Build 102.
+   Beta 6 Build 103.
    Choose **Yes** when the uninstaller asks whether to keep downloaded maps and
    user data, so the new installation can reuse them.
 2. Download the installer from one of the two official channels above.
-3. Run `TaxiNow-V1.0-Beta-5-Build-102-Setup.exe`.
+3. Run `TaxiNow-V1.0-Beta-6-Build-103-Setup.exe`.
 4. Read and accept the EULA.
 5. Complete setup and launch TaxiNow.
 
@@ -118,7 +113,7 @@ installed automatically.
 1. Start TaxiNow.
 2. Enter a four-character ICAO code in the airport selector.
 3. Add the airport map if it is not already installed.
-4. Start MSFS 2024 and load into a flight.
+4. Start MSFS 2024 or MSFS 2020 and load into a flight.
 5. Select the correct airport in TaxiNow.
 6. When synchronization turns green, the aircraft icon appears on the map.
 7. Use the position-refresh control if the display appears out of sync.
@@ -182,7 +177,7 @@ TaxiNow databases, caches, settings, logs, and downloaded assets.
   right-click it and select **Quit**.
 - **Blank window:** close TaxiNow, run setup again to repair required
   components, restart Windows, and try again.
-- **Red simulator status:** start MSFS 2024 and load a flight, then restart
+- **Red simulator status:** start MSFS 2024 or MSFS 2020 and load a flight, then restart
   TaxiNow if necessary.
 - **Orange simulator status:** finish loading the flight, remain on the ground,
   wait briefly, and use position refresh.
@@ -219,9 +214,7 @@ TaxiNow 仅限个人模拟飞行使用，严禁用于真实飞行、真实导航
 ### 模拟器兼容性
 
 - **Microsoft Flight Simulator 2024：**已经测试并支持
-- **Microsoft Flight Simulator 2020：**理论上可能可以使用，但尚未完成兼容性测试
-
-后续版本将加入对 MSFS 2020 的正式支持。
+- **Microsoft Flight Simulator 2020：**已经测试并支持
 
 ### 主要功能
 
@@ -242,7 +235,7 @@ TaxiNow 仅限个人模拟飞行使用，严禁用于真实飞行、真实导航
 - 可选的同一可信局域网内其他设备访问
 - 支持最小化到系统托盘
 
-Beta 5 Build 102 会优先使用连续的 OSM 及可用 FAA 建筑轮廓，不再让 X-Plane 模块化外墙
+Beta 6 Build 103 会优先使用连续的 OSM 及可用 FAA 建筑轮廓，不再让 X-Plane 模块化外墙
 片段覆盖权威航站楼图形。预处理地图包还可严格筛选 Overture 与 Microsoft 全球
 建筑轮廓；完整父建筑会压制重叠的建筑分块，可信的邻近航站楼/指廊名称会自动
 传递到已接受的无名轮廓，从而尽量改善航站楼支离破碎、形状或标注缺失的问题。
@@ -251,17 +244,16 @@ TaxiNow 现已包含可重复的全球预处理流水线，可按照可用的省
 并生成可断点续传、可并行且经过校验的有限大小分片。某个国家的地图包上传至官方
 索引后，按国家下载才会进入高速路径；尚未发布地图包的国家仍使用较慢的按需回退。
 
-维护者专用的 TaxiNow Local Map Pack Builder 当前为 Build 103。该热修复补回了
-初版 Build 102 生成器安装包中误漏的机场和跑道目录；TaxiNow 主程序仍为 Build 102。
+维护者专用的 TaxiNow Local Map Pack Builder 当前为 Build 105。
 
 本版本不包含滑行路线计算或逐步滑行指引。
 
 ### 安装方法
 
-1. 如果已经安装旧版 TaxiNow，请先卸载旧版本，再安装 Beta 5 Build 102。
+1. 如果已经安装旧版 TaxiNow，请先卸载旧版本，再安装 Beta 6 Build 103。
    卸载器询问是否保留地图和用户数据时请选择 **“是”**，新版安装后即可继续使用。
 2. 从上述两个官方渠道之一下载安装程序。
-3. 运行 `TaxiNow-V1.0-Beta-5-Build-102-Setup.exe`。
+3. 运行 `TaxiNow-V1.0-Beta-6-Build-103-Setup.exe`。
 4. 阅读并同意最终用户许可协议。
 5. 完成安装并启动 TaxiNow。
 
@@ -273,7 +265,7 @@ TaxiNow 按当前 Windows 用户安装，通常不需要管理员权限。必要
 1. 启动 TaxiNow。
 2. 在机场选择器中输入四位 ICAO 代码。
 3. 如果机场尚未安装，请先添加该机场地图。
-4. 启动 MSFS 2024 并进入飞行。
+4. 启动 MSFS 2024 或 MSFS 2020 并进入飞行。
 5. 在 TaxiNow 中选择正确的机场。
 6. 同步状态变为绿色后，地图上会显示飞机图标。
 7. 如果位置没有及时同步，请使用位置刷新按钮。
@@ -326,7 +318,7 @@ TaxiNow 是受版权保护的软件，不是开源或公有领域软件。软件
 - **提示已经运行：**从系统托盘恢复 TaxiNow，或右键选择 **Quit**。
 - **窗口空白：**退出 TaxiNow，重新运行安装程序修复必要组件，重启 Windows
   后再次尝试。
-- **模拟器状态为红色：**启动 MSFS 2024 并进入飞行，必要时重新启动 TaxiNow。
+- **模拟器状态为红色：**启动 MSFS 2024 或 MSFS 2020 并进入飞行，必要时重新启动 TaxiNow。
 - **模拟器状态为橙色：**等待飞行完全加载并保持飞机在地面，然后刷新位置。
 - **没有飞机图标：**选择正确机场并确认同步状态为绿色。
 - **地图获取较慢：**选择 1 个批量任务工作线程并稍后重试。公共 OSM
