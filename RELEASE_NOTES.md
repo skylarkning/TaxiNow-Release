@@ -1,18 +1,22 @@
-# TaxiNow V1.1 — Build 110
+# TaxiNow V1.2 — Build 111
 
-Release date: August 2, 2026
+Release date: August 6, 2026
 
-TaxiNow V1.1 is the first non-beta release. It supports Microsoft Flight
-Simulator 2020 and 2024 on Windows x64.
+TaxiNow V1.2 supports Microsoft Flight Simulator 2020 and 2024 on Windows x64.
 
 ## Changelog
 
-- Added automatic taxi-route planning with multiple route choices.
-- Added blue route highlighting, live route progress, and turn guidance.
-- Added experimental customized taxi-route entry.
-- Improved routing to favor major taxiways and reduce unnecessary zigzagging.
-- Added complete French and German interfaces alongside English and Simplified Chinese.
-- Included accumulated map-rendering, download, simulator-sync, and stability fixes.
+- Added complete Traditional Chinese and Japanese interface translations.
+- TaxiNow now opens the last successfully displayed airport when it is still
+  installed, instead of always preferring CYYZ.
+- Added an optional heading-up map lock. It keeps the aircraft heading at the
+  top and follows the aircraft from the lower center, while preserving the
+  existing free-rotation and north-reset controls.
+- Improved arrival taxi routing with aircraft-heading-aware start snapping,
+  rejection of reverse runway exits, and prevention of near-180-degree ground
+  reversals.
+- Rebalanced route scoring so main taxiways remain preferred without allowing
+  a clearly longer loop to beat a practical direct connection.
 
 Automatic routes are generic simulation guidance and may not reflect ATC
 instructions, taxiway restrictions, aircraft limits, or real-world procedures.
@@ -20,35 +24,33 @@ TaxiNow must not be used for real-world navigation.
 
 ## Upgrade
 
-Close TaxiNow, then run `TaxiNow-V1.1-Build-110-Setup.exe`. You may install it
+Close TaxiNow, then run `TaxiNow-V1.2-Build-111-Setup.exe`. You may install it
 over an earlier version. If you uninstall first, choose **Yes / Keep data** to
 retain downloaded airport maps.
 
 ---
 
-# TaxiNow V1.1 — 内部版本 110
+# TaxiNow V1.2 — 内部版本 111
 
-发布日期：2026 年 8 月 2 日
+发布日期：2026年8月6日
 
-TaxiNow V1.1 是首个结束 Beta 测试的正式版本，支持 Windows x64 上的
-Microsoft Flight Simulator 2020 与 2024。
+TaxiNow V1.2 支持 Windows x64 上的 Microsoft Flight Simulator 2020 与 2024。
 
 ## 更新日志
 
-- 新增自动滑行路线规划，并提供多条候选路线。
-- 新增蓝色路线高亮、实时路线进度与转向提示。
-- 新增实验性的自定义滑行路线输入。
-- 优化寻路逻辑，优先使用主要滑行道并减少不必要的曲折路线。
-- 在英文和简体中文之外，新增完整法语与德语界面。
-- 汇总加入地图绘制、下载、模拟器同步与稳定性修复。
+- 新增完整的繁体中文和日语界面。
+- 启动时优先打开上次成功显示且仍已安装的机场，不再总是优先打开 CYYZ。
+- 新增机头朝上地图锁定模式：飞机保持机头朝上并位于画面下方中央，同时保留原有自由旋转和恢复朝北功能。
+- 到达滑行路线现在会结合飞机实时航向选择接入点，排除反向跑道脱离，并阻止接近180°的原地掉头路线。
+- 重新平衡主滑行道权重，继续优先使用主滑行道，同时避免明显绕远的路线胜过合理直达路线。
 
-自动路线仅为通用算法生成的模拟飞行参考，可能不会反映 ATC 指令、滑行道限制、
-机型限制或真实运行程序。严禁将 TaxiNow 用于真实飞行导航。
+自动路线仅为通用算法生成的模拟飞行参考，可能不会反映ATC指令、滑行道限制、
+机型限制或真实运行程序。严禁将TaxiNow用于真实飞行导航。
 
 ## 升级方法
 
-关闭 TaxiNow，然后运行 `TaxiNow-V1.1-Build-110-Setup.exe`，可直接覆盖安装旧版本。
-如先卸载旧版，请选择 **“是 / 保留数据”**，以继续使用已下载的机场地图。
+关闭TaxiNow，然后运行`TaxiNow-V1.2-Build-111-Setup.exe`，可直接覆盖安装旧版本。
+如先卸载旧版，请选择**“是 / 保留数据”**，以继续使用已下载的机场地图。
 
 ## Acknowledgements and credits / 致谢
 

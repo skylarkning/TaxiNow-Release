@@ -2,7 +2,7 @@
   <img src="assets/taxinow-logo.png" width="540" alt="TaxiNow" />
 </p>
 
-# TaxiNow V1.1 (Build 110)
+# TaxiNow V1.2 (Build 111)
 
 **[English](#english) | [中文](#中文)**
 
@@ -57,10 +57,12 @@ operational training.
 - Live aircraft ground position and heading through SimConnect
 - Simulator connection and synchronization status
 - Manual position refresh
-- English, Simplified Chinese, French, and German interface
+- English, Simplified Chinese, Traditional Chinese, Japanese, French, and German interface
 - Automatic taxi-route planning with multiple route choices
 - Blue route highlighting, live progress, and turn guidance
 - Experimental customized taxi-route entry
+- Remembers the last successfully displayed airport between launches
+- Optional heading-up navigation lock with the aircraft followed at the lower center
 - Airport search and quick ICAO map acquisition
 - Map acquisition by ICAO, Country/Region, or Province/State
 - Configurable batch workers: 1, 2, 4, 8, or 16; use 1 for public OSM
@@ -100,11 +102,11 @@ use; customized taxi routes are available when an automatic route is unsuitable.
 
 ### Installation
 
-1. Close TaxiNow. V1.1 may be installed over an earlier version. If you prefer
+1. Close TaxiNow. V1.2 may be installed over an earlier version. If you prefer
    to uninstall first, choose **Yes** when asked to keep downloaded maps and
    user data so the new installation can reuse them.
 2. Download the installer from one of the two official channels above.
-3. Run `TaxiNow-V1.1-Build-110-Setup.exe`.
+3. Run `TaxiNow-V1.2-Build-111-Setup.exe`.
 4. Read and accept the EULA.
 5. Complete setup and launch TaxiNow.
 
@@ -227,10 +229,12 @@ TaxiNow 仅限个人模拟飞行使用，严禁用于真实飞行、真实导航
 - 通过 SimConnect 显示飞机地面位置和航向
 - 模拟器连接及位置同步状态
 - 手动刷新飞机位置
-- 英文、简体中文、法语和德语界面
+- 英文、简体中文、繁体中文、日语、法语和德语界面
 - 自动规划滑行路线并提供多条路线选择
 - 在地图上以蓝色高亮路线，提供实时进度与转向提示
 - 支持实验性的自定义滑行路线输入
+- 启动时恢复上次成功显示且仍已安装的机场
+- 新增机头朝上导航锁定，并将飞机自动保持在画面下方中央
 - 机场搜索及 ICAO 快速地图获取
 - 按 ICAO、国家/地区或省/州获取地图
 - 支持 1、2、4、8、16 个批量任务工作线程；公共 OSM 推荐使用 1
@@ -259,10 +263,10 @@ TaxiNow 现已包含可重复的全球预处理流水线，可按照可用的省
 
 ### 安装方法
 
-1. 关闭 TaxiNow。V1.1 可以直接覆盖安装旧版本；如果希望先卸载，卸载器询问是否
+1. 关闭 TaxiNow。V1.2 可以直接覆盖安装旧版本；如果希望先卸载，卸载器询问是否
    保留地图和用户数据时请选择 **“是”**，新版安装后即可继续使用。
 2. 从上述两个官方渠道之一下载安装程序。
-3. 运行 `TaxiNow-V1.1-Build-110-Setup.exe`。
+3. 运行 `TaxiNow-V1.2-Build-111-Setup.exe`。
 4. 阅读并同意最终用户许可协议。
 5. 完成安装并启动 TaxiNow。
 
