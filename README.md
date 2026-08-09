@@ -2,7 +2,7 @@
   <img src="assets/taxinow-logo.png" width="540" alt="TaxiNow" />
 </p>
 
-# TaxiNow V1.2 (Build 111)
+# TaxiNow V1.3 (Build 114)
 
 **[English](#english) | [中文](#中文)**
 
@@ -57,7 +57,9 @@ operational training.
 - Live aircraft ground position and heading through SimConnect
 - Simulator connection and synchronization status
 - Manual position refresh
-- English, Simplified Chinese, Traditional Chinese, Japanese, French, and German interface
+- English, Simplified Chinese, Traditional Chinese, Japanese, French, German, and Korean interface
+- Settings menu with language selection and an optional **Keep window visible** mode
+- Collision-aware header layout that folds content only when the rendered text would overlap
 - Automatic taxi-route planning with multiple route choices
 - Blue route highlighting, live progress, and turn guidance
 - Experimental customized taxi-route entry
@@ -102,11 +104,11 @@ use; customized taxi routes are available when an automatic route is unsuitable.
 
 ### Installation
 
-1. Close TaxiNow. V1.2 may be installed over an earlier version. If you prefer
+1. Close TaxiNow. V1.3 may be installed over an earlier version. If you prefer
    to uninstall first, choose **Yes** when asked to keep downloaded maps and
    user data so the new installation can reuse them.
 2. Download the installer from one of the two official channels above.
-3. Run `TaxiNow-V1.2-Build-111-Setup.exe`.
+3. Run `TaxiNow-V1.3-Build-114-Setup.exe`.
 4. Read and accept the EULA.
 5. Complete setup and launch TaxiNow.
 
@@ -229,7 +231,9 @@ TaxiNow 仅限个人模拟飞行使用，严禁用于真实飞行、真实导航
 - 通过 SimConnect 显示飞机地面位置和航向
 - 模拟器连接及位置同步状态
 - 手动刷新飞机位置
-- 英文、简体中文、繁体中文、日语、法语和德语界面
+- 英文、简体中文、繁体中文、日语、法语、德语和韩语界面
+- 设置菜单包含语言选择及可选的**保持窗口始终可见**功能
+- 页头会根据实际文字碰撞自动折叠，避免窄窗口下重叠或过早隐藏
 - 自动规划滑行路线并提供多条路线选择
 - 在地图上以蓝色高亮路线，提供实时进度与转向提示
 - 支持实验性的自定义滑行路线输入
@@ -263,10 +267,10 @@ TaxiNow 现已包含可重复的全球预处理流水线，可按照可用的省
 
 ### 安装方法
 
-1. 关闭 TaxiNow。V1.2 可以直接覆盖安装旧版本；如果希望先卸载，卸载器询问是否
+1. 关闭 TaxiNow。V1.3 可以直接覆盖安装旧版本；如果希望先卸载，卸载器询问是否
    保留地图和用户数据时请选择 **“是”**，新版安装后即可继续使用。
 2. 从上述两个官方渠道之一下载安装程序。
-3. 运行 `TaxiNow-V1.2-Build-111-Setup.exe`。
+3. 运行 `TaxiNow-V1.3-Build-114-Setup.exe`。
 4. 阅读并同意最终用户许可协议。
 5. 完成安装并启动 TaxiNow。
 
