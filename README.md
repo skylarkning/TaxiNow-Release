@@ -2,7 +2,7 @@
   <img src="assets/taxinow-logo.png" width="540" alt="TaxiNow" />
 </p>
 
-# TaxiNow V1.3 (Build 114)
+# TaxiNow V1.4 (Build 118)
 
 **[English](#english) | [中文](#中文)**
 
@@ -62,7 +62,11 @@ operational training.
 - Collision-aware header layout that folds content only when the rendered text would overlap
 - Automatic taxi-route planning with multiple route choices
 - Blue route highlighting, live progress, and turn guidance
-- Experimental customized taxi-route entry
+- Experimental customized taxi-route entry with connected-taxiway filtering
+- Manual taxi start and destination placement by right-click or touch-and-hold
+- Dark and light appearances with a one-click sun/moon switch
+- Detailed runway threshold, aiming-point, touchdown-zone, number, and heading graphics
+- Automatic update checks with official download and in-app installer choices
 - Remembers the last successfully displayed airport between launches
 - Optional heading-up navigation lock with the aircraft followed at the lower center
 - Airport search and quick ICAO map acquisition
@@ -104,11 +108,11 @@ use; customized taxi routes are available when an automatic route is unsuitable.
 
 ### Installation
 
-1. Close TaxiNow. V1.3 may be installed over an earlier version. If you prefer
+1. Close TaxiNow. V1.4 may be installed over an earlier version. If you prefer
    to uninstall first, choose **Yes** when asked to keep downloaded maps and
    user data so the new installation can reuse them.
 2. Download the installer from one of the two official channels above.
-3. Run `TaxiNow-V1.3-Build-114-Setup.exe`.
+3. Run `TaxiNow-V1.4-Build-118-Setup.exe`.
 4. Read and accept the EULA.
 5. Complete setup and launch TaxiNow.
 
@@ -236,7 +240,11 @@ TaxiNow 仅限个人模拟飞行使用，严禁用于真实飞行、真实导航
 - 页头会根据实际文字碰撞自动折叠，避免窄窗口下重叠或过早隐藏
 - 自动规划滑行路线并提供多条路线选择
 - 在地图上以蓝色高亮路线，提供实时进度与转向提示
-- 支持实验性的自定义滑行路线输入
+- 支持实验性的自定义滑行路线输入，并按相邻关系筛选可选滑行道
+- 支持通过右键或触摸长按地图指定滑行起点和目的地
+- 新增深色与浅色外观，以及一键太阳/月亮切换按钮
+- 新增详细的跑道入口、瞄准点、接地区、跑道号码及航向图形
+- 新增自动检查更新、官方渠道下载及应用内下载安装选项
 - 启动时恢复上次成功显示且仍已安装的机场
 - 新增机头朝上导航锁定，并将飞机自动保持在画面下方中央
 - 机场搜索及 ICAO 快速地图获取
@@ -267,10 +275,10 @@ TaxiNow 现已包含可重复的全球预处理流水线，可按照可用的省
 
 ### 安装方法
 
-1. 关闭 TaxiNow。V1.3 可以直接覆盖安装旧版本；如果希望先卸载，卸载器询问是否
+1. 关闭 TaxiNow。V1.4 可以直接覆盖安装旧版本；如果希望先卸载，卸载器询问是否
    保留地图和用户数据时请选择 **“是”**，新版安装后即可继续使用。
 2. 从上述两个官方渠道之一下载安装程序。
-3. 运行 `TaxiNow-V1.3-Build-114-Setup.exe`。
+3. 运行 `TaxiNow-V1.4-Build-118-Setup.exe`。
 4. 阅读并同意最终用户许可协议。
 5. 完成安装并启动 TaxiNow。
 
