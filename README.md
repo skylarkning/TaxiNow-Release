@@ -2,7 +2,7 @@
   <img src="assets/taxinow-logo.png" width="540" alt="TaxiNow" />
 </p>
 
-# TaxiNow V1.4 (Build 118)
+# TaxiNow V1.4.1 (Build 119)
 
 **[English](#english) | [中文](#中文)**
 
@@ -65,7 +65,7 @@ operational training.
 - Experimental customized taxi-route entry with connected-taxiway filtering
 - Manual taxi start and destination placement by right-click or touch-and-hold
 - Dark and light appearances with a one-click sun/moon switch
-- Detailed runway threshold, aiming-point, touchdown-zone, number, and heading graphics
+- Detailed runway threshold, aiming-point, touchdown-zone, runway-number, and blast-pad/stopway graphics
 - Automatic update checks with official download and in-app installer choices
 - Remembers the last successfully displayed airport between launches
 - Optional heading-up navigation lock with the aircraft followed at the lower center
@@ -108,11 +108,11 @@ use; customized taxi routes are available when an automatic route is unsuitable.
 
 ### Installation
 
-1. Close TaxiNow. V1.4 may be installed over an earlier version. If you prefer
+1. Close TaxiNow. V1.4.1 may be installed over an earlier version. If you prefer
    to uninstall first, choose **Yes** when asked to keep downloaded maps and
    user data so the new installation can reuse them.
 2. Download the installer from one of the two official channels above.
-3. Run `TaxiNow-V1.4-Build-118-Setup.exe`.
+3. Run `TaxiNow-V1.4.1-Build-119-Setup.exe`.
 4. Read and accept the EULA.
 5. Complete setup and launch TaxiNow.
 
