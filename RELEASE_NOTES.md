@@ -1,38 +1,37 @@
-# TaxiNow V1.4.1 — Build 119
+# TaxiNow V1.4.2 — Build 120
 
 Release date: August 14, 2026
 
 ## Changelog
 
-- Removed the red runway-end capsules because available worldwide runway
-  heading values are not consistently current magnetic headings. The original
-  white runway numbers remain on the runway surface.
-- Corrected touchdown-zone and aiming-point marking spacing so paired blocks
-  retain a clear center gap and remain inside the runway edges.
-- Added dark blast-pad/stopway surfaces with yellow chevron markings.
-- Kept both map renderers consistent and added runway-geometry regression tests.
+- Replaced incorrect duplicated runway-end piano-key markings with dark
+  blast-pad/stopway areas and standardized yellow chevrons.
+- Added a white demarcation bar between each yellow-chevron area and the normal
+  runway pavement.
+- Enlarged and strengthened the original runway pavement numbers after removal
+  of the inaccurate red heading capsules.
+- Corrected the longitudinal spacing between aiming-point and touchdown-zone
+  markings.
 
-Close TaxiNow, then run `TaxiNow-V1.4.1-Build-119-Setup.exe`. It may be
-installed over V1.4. If you uninstall first, choose to keep downloaded maps
+Close TaxiNow, then run `TaxiNow-V1.4.2-Build-120-Setup.exe`. It may be installed
+over an earlier version. If you uninstall first, choose to keep downloaded maps
 and user data.
 
 ---
 
-# TaxiNow V1.4.1 — 内部版本 119
+# TaxiNow V1.4.2 — 内部版本 120
 
 发布日期：2026年8月14日
 
 ## 更新日志
 
-- 移除跑道端红色胶囊。现有全球数据无法稳定提供准确且及时更新的磁航向，
-  因此不再显示可能误导的数值；跑道表面的原有白色跑道编号继续保留。
-- 修正接地区与瞄准点标线的横向间距，使成对标线之间留有清晰间隔，
-  并始终位于跑道边线以内。
-- 新增深色防吹坪/停止道与黄色人字形标线。
-- 统一两套地图渲染器的效果，并增加跑道几何回归测试。
+- 将错误重复出现的跑道端“斑马线”替换为深色防吹坪/停止道及统一的黄色三角标线。
+- 在黄色三角区域与正常跑道之间新增白色分割线。
+- 移除航向数据不准确的红色胶囊后，适当放大并加粗原有跑道编号。
+- 修正瞄准点大白块与接地区小白块之间过近的纵向间距。
 
-关闭TaxiNow后运行`TaxiNow-V1.4.1-Build-119-Setup.exe`，可覆盖安装V1.4。
-如果先卸载旧版本，请选择保留已下载地图和用户数据。
+关闭TaxiNow后运行`TaxiNow-V1.4.2-Build-120-Setup.exe`，可覆盖安装旧版本。
+如先卸载旧版，请选择保留已下载地图和用户数据。
 
 ## Acknowledgements and credits / 致谢
 

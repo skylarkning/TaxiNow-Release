@@ -2,7 +2,7 @@
   <img src="assets/taxinow-logo.png" width="540" alt="TaxiNow" />
 </p>
 
-# TaxiNow V1.4.1 (Build 119)
+# TaxiNow V1.4.2 (Build 120)
 
 **[English](#english) | [中文](#中文)**
 
@@ -108,11 +108,11 @@ use; customized taxi routes are available when an automatic route is unsuitable.
 
 ### Installation
 
-1. Close TaxiNow. V1.4.1 may be installed over an earlier version. If you prefer
+1. Close TaxiNow. V1.4.2 may be installed over an earlier version. If you prefer
    to uninstall first, choose **Yes** when asked to keep downloaded maps and
    user data so the new installation can reuse them.
 2. Download the installer from one of the two official channels above.
-3. Run `TaxiNow-V1.4.1-Build-119-Setup.exe`.
+3. Run `TaxiNow-V1.4.2-Build-120-Setup.exe`.
 4. Read and accept the EULA.
 5. Complete setup and launch TaxiNow.
 
