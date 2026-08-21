@@ -2,7 +2,7 @@
   <img src="assets/taxinow-logo.png" width="540" alt="TaxiNow" />
 </p>
 
-# TaxiNow V1.4.2 (Build 120)
+# TaxiNow V1.4.3 (Build 121)
 
 **[English](#english) | [中文](#中文)**
 
@@ -79,6 +79,8 @@ operational training.
 - Map library grouped by Country/Region → Province/State → Airport
 - Storage usage, free-space information, and customizable storage location
 - Optional access from another device on the same trusted local network
+- Optional privacy-minimized vMAS online-presence integration, disabled by
+  default and restricted to the authorized `https://vmas.my` origin
 - Minimize-to-tray support
 
 TaxiNow uses continuous OSM and available FAA building footprints ahead of
@@ -108,11 +110,11 @@ use; customized taxi routes are available when an automatic route is unsuitable.
 
 ### Installation
 
-1. Close TaxiNow. V1.4.2 may be installed over an earlier version. If you prefer
+1. Close TaxiNow. V1.4.3 may be installed over an earlier version. If you prefer
    to uninstall first, choose **Yes** when asked to keep downloaded maps and
    user data so the new installation can reuse them.
 2. Download the installer from one of the two official channels above.
-3. Run `TaxiNow-V1.4.2-Build-120-Setup.exe`.
+3. Run `TaxiNow-V1.4.3-Build-121-Setup.exe`.
 4. Read and accept the EULA.
 5. Complete setup and launch TaxiNow.
 

@@ -1,36 +1,36 @@
-# TaxiNow V1.4.2 — Build 120
+# TaxiNow V1.4.3 — Build 121
 
-Release date: August 14, 2026
+Release date: August 21, 2026
 
 ## Changelog
 
-- Replaced incorrect duplicated runway-end piano-key markings with dark
-  blast-pad/stopway areas and standardized yellow chevrons.
-- Added a white demarcation bar between each yellow-chevron area and the normal
-  runway pavement.
-- Enlarged and strengthened the original runway pavement numbers after removal
-  of the inaccurate red heading capsules.
-- Corrected the longitudinal spacing between aiming-point and touchdown-zone
-  markings.
+- Corrected EDDF Runway 18 so its single operational designator appears only
+  at the correct threshold instead of being duplicated at both ends.
+- Added an optional vMAS presence integration for the authorized
+  `https://vmas.my` origin.
+- The integration is disabled by default and exposes only whether TaxiNow is
+  available plus its version and build number. It does not expose simulator or
+  aircraft telemetry.
+- Added localized settings and explanatory text for the integration.
 
-Close TaxiNow, then run `TaxiNow-V1.4.2-Build-120-Setup.exe`. It may be installed
+Close TaxiNow, then run `TaxiNow-V1.4.3-Build-121-Setup.exe`. It may be installed
 over an earlier version. If you uninstall first, choose to keep downloaded maps
 and user data.
 
 ---
 
-# TaxiNow V1.4.2 — 内部版本 120
+# TaxiNow V1.4.3 — 内部版本 121
 
-发布日期：2026年8月14日
+发布日期：2026年8月21日
 
 ## 更新日志
 
-- 将错误重复出现的跑道端“斑马线”替换为深色防吹坪/停止道及统一的黄色三角标线。
-- 在黄色三角区域与正常跑道之间新增白色分割线。
-- 移除航向数据不准确的红色胶囊后，适当放大并加粗原有跑道编号。
-- 修正瞄准点大白块与接地区小白块之间过近的纵向间距。
+- 修正EDDF的18号跑道标号，使其仅在正确的跑道端显示，不再在两端重复标注18。
+- 新增针对已授权来源`https://vmas.my`的可选vMAS在线状态集成。
+- 该功能默认关闭，仅提供TaxiNow是否在线、版本号和内部构建号，不提供模拟器或飞机遥测数据。
+- 为该功能添加了多语言设置与说明。
 
-关闭TaxiNow后运行`TaxiNow-V1.4.2-Build-120-Setup.exe`，可覆盖安装旧版本。
+关闭TaxiNow后运行`TaxiNow-V1.4.3-Build-121-Setup.exe`，可覆盖安装旧版本。
 如先卸载旧版，请选择保留已下载地图和用户数据。
 
 ## Acknowledgements and credits / 致谢
