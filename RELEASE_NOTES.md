@@ -1,36 +1,34 @@
-# TaxiNow V1.4.3 — Build 121
+# TaxiNow V1.4.4 — Build 122
 
-Release date: August 21, 2026
+Release date: August 23, 2026
 
 ## Changelog
 
-- Corrected EDDF Runway 18 so its single operational designator appears only
-  at the correct threshold instead of being duplicated at both ends.
-- Added an optional vMAS presence integration for the authorized
-  `https://vmas.my` origin.
-- The integration is disabled by default and exposes only whether TaxiNow is
-  available plus its version and build number. It does not expose simulator or
-  aircraft telemetry.
-- Added localized settings and explanatory text for the integration.
+- Fixed a race that could leave the aircraft position icon hidden when
+  telemetry arrived while the map layer was still loading. A stationary
+  aircraft no longer has to move before the icon appears.
+- The aircraft icon now synchronizes as soon as either the native map layer or
+  SVG fallback becomes ready, including after switching airports.
+- Ownship animation now starts immediately after its map layer is created
+  instead of waiting for the map idle event or fallback timeout.
 
-Close TaxiNow, then run `TaxiNow-V1.4.3-Build-121-Setup.exe`. It may be installed
+Close TaxiNow, then run `TaxiNow-V1.4.4-Build-122-Setup.exe`. It may be installed
 over an earlier version. If you uninstall first, choose to keep downloaded maps
 and user data.
 
 ---
 
-# TaxiNow V1.4.3 — 内部版本 121
+# TaxiNow V1.4.4 — 内部版本 122
 
-发布日期：2026年8月21日
+发布日期：2026年8月23日
 
 ## 更新日志
 
-- 修正EDDF的18号跑道标号，使其仅在正确的跑道端显示，不再在两端重复标注18。
-- 新增针对已授权来源`https://vmas.my`的可选vMAS在线状态集成。
-- 该功能默认关闭，仅提供TaxiNow是否在线、版本号和内部构建号，不提供模拟器或飞机遥测数据。
-- 为该功能添加了多语言设置与说明。
+- 修复飞机遥测数据在地图图层加载期间到达时，当前位置图标可能一直隐藏的竞态问题。飞机静止时也无需等到移动后才显示图标。
+- 地图原生图层或 SVG 后备图层就绪后会立即同步飞机图标，切换机场后同样有效。
+- 飞机位置动画会在图层创建后立即启动，不再等待地图空闲事件或超时兜底。
 
-关闭TaxiNow后运行`TaxiNow-V1.4.3-Build-121-Setup.exe`，可覆盖安装旧版本。
+关闭 TaxiNow 后运行 `TaxiNow-V1.4.4-Build-122-Setup.exe`，可覆盖安装旧版本。
 如先卸载旧版，请选择保留已下载地图和用户数据。
 
 ## Acknowledgements and credits / 致谢
