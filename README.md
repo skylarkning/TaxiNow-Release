@@ -2,7 +2,7 @@
   <img src="assets/taxinow-logo.png" width="540" alt="TaxiNow" />
 </p>
 
-# TaxiNow V1.4.5 (Build 123)
+# TaxiNow V1.5 (Build 126)
 
 **[English](#english) | [中文](#中文)**
 
@@ -55,6 +55,9 @@ operational training.
 - Detailed airport ground maps
 - Runways, taxiways, taxilanes, aprons, terminals, parking stands, and labels
 - Live aircraft ground position and heading through SimConnect
+- Optional nearby VATSIM traffic from the official public network-data feed,
+  shown as orange aircraft with upright callsign labels; the local MSFS
+  aircraft remains cyan
 - Reliable aircraft-icon synchronization as soon as the map layer becomes
   ready, including for stationary aircraft and after switching airports
 - One consistent SVG aircraft icon on desktop and iPad, with immediate iPad
@@ -67,7 +70,8 @@ operational training.
 - Collision-aware header layout that folds content only when the rendered text would overlap
 - Automatic taxi-route planning with multiple route choices
 - Blue route highlighting, live progress, and turn guidance
-- Experimental customized taxi-route entry with connected-taxiway filtering
+- Experimental customized taxi-route entry with connected-taxiway filtering;
+  commas, spaces, or mixed separators are accepted
 - Manual taxi start and destination placement by right-click or touch-and-hold
 - Dark and light appearances with a one-click sun/moon switch
 - Detailed runway threshold, aiming-point, touchdown-zone, runway-number, and blast-pad/stopway graphics
@@ -115,11 +119,11 @@ use; customized taxi routes are available when an automatic route is unsuitable.
 
 ### Installation
 
-1. Close TaxiNow. V1.4.5 may be installed over an earlier version. If you prefer
+1. Close TaxiNow. V1.5 may be installed over an earlier version. If you prefer
    to uninstall first, choose **Yes** when asked to keep downloaded maps and
    user data so the new installation can reuse them.
 2. Download the installer from one of the two official channels above.
-3. Run `TaxiNow-V1.4.5-Build-123-Setup.exe`.
+3. Run `TaxiNow-V1.5-Build-126-Setup.exe`.
 4. Read and accept the EULA.
 5. Complete setup and launch TaxiNow.
 
@@ -159,6 +163,11 @@ logs, caches, and the asset database are stored locally.
 For ground tracking, TaxiNow reads latitude, longitude, true heading,
 on-ground state, and ground speed from the simulator. It does not intentionally
 send live aircraft position to map-data providers.
+
+The optional VATSIM traffic setting is off by default. When enabled, TaxiNow's
+PC service requests the official public VATSIM network-data feed, caches it for
+about 15 seconds, and forwards only the nearby aircraft fields needed for the
+map. Local simulator telemetry is not sent to VATSIM.
 
 TaxiNow source code is not publicly available. Qualified independent security
 or privacy experts may request limited review access from Sky Ning solely to
@@ -202,6 +211,9 @@ TaxiNow databases, caches, settings, logs, and downloaded assets.
   wait briefly, and use position refresh.
 - **Missing aircraft icon:** select the correct airport and confirm the
   synchronization status is green.
+- **VATSIM traffic refreshes only occasionally:** the official VATSIM
+  network-data feed is regenerated about every 15 seconds. TaxiNow follows
+  that cadence and shares one PC-side cache between desktop and iPad views.
 - **Slow map acquisition:** use 1 batch worker and retry later. Public OSM
   server-side processing is often slower when several requests compete for
   the same per-user slots. OSM normally takes 5–30 seconds; busy airports can take
@@ -240,6 +252,8 @@ TaxiNow 仅限个人模拟飞行使用，严禁用于真实飞行、真实导航
 - 详细的机场地面地图
 - 显示跑道、滑行道、机坪、航站楼、停机位及相关编号
 - 通过 SimConnect 显示飞机地面位置和航向
+- 可选显示官方公开网络数据源中的附近 VATSIM 交通；其他飞机使用带呼号的
+  橘色图标，本机 MSFS 飞机保持青色
 - 地图图层就绪后立即可靠同步飞机图标，飞机静止或切换机场后同样有效
 - 桌面端与 iPad 使用相同的 SVG 飞机图标；iPad 可立即显示，图标尺寸统一为 32.4 px
 - 滑行道灰色铺装及其边缘加宽 20%，提高地面地图辨识度
@@ -250,7 +264,8 @@ TaxiNow 仅限个人模拟飞行使用，严禁用于真实飞行、真实导航
 - 页头会根据实际文字碰撞自动折叠，避免窄窗口下重叠或过早隐藏
 - 自动规划滑行路线并提供多条路线选择
 - 在地图上以蓝色高亮路线，提供实时进度与转向提示
-- 支持实验性的自定义滑行路线输入，并按相邻关系筛选可选滑行道
+- 支持实验性的自定义滑行路线输入，并按相邻关系筛选可选滑行道；可使用
+  逗号、空格或混合方式分隔
 - 支持通过右键或触摸长按地图指定滑行起点和目的地
 - 新增深色与浅色外观，以及一键太阳/月亮切换按钮
 - 新增详细的跑道入口、瞄准点、接地区、跑道号码及航向图形
@@ -285,10 +300,10 @@ TaxiNow 现已包含可重复的全球预处理流水线，可按照可用的省
 
 ### 安装方法
 
-1. 关闭 TaxiNow。V1.4.5 可以直接覆盖安装旧版本；如果希望先卸载，卸载器询问是否
+1. 关闭 TaxiNow。V1.5 可以直接覆盖安装旧版本；如果希望先卸载，卸载器询问是否
    保留地图和用户数据时请选择 **“是”**，新版安装后即可继续使用。
 2. 从上述两个官方渠道之一下载安装程序。
-3. 运行 `TaxiNow-V1.4.5-Build-123-Setup.exe`。
+3. 运行 `TaxiNow-V1.5-Build-126-Setup.exe`。
 4. 阅读并同意最终用户许可协议。
 5. 完成安装并启动 TaxiNow。
 
@@ -323,6 +338,10 @@ TaxiNow 不要求注册账号，不包含广告，不包含内置行为分析，
 为了显示地面位置，TaxiNow 仅从模拟器读取纬度、经度、真航向、是否在地面及
 地速。TaxiNow 不会主动将实时飞机位置发送给地图数据提供方。
 
+可选的 VATSIM 交通功能默认关闭。启用后，TaxiNow 的电脑端服务会请求 VATSIM
+官方公开网络数据源，缓存约 15 秒，并仅向地图提供显示附近飞机所需的字段。
+TaxiNow 不会把本机模拟器遥测发送给 VATSIM。
+
 TaxiNow 源代码不公开。符合条件的独立安全或隐私专家，可以仅以核验 TaxiNow
 安全与隐私行为为目的，向 Sky Ning 申请有限审查访问。是否批准及具体审查条件
 由开发者决定。审查权限不包含复制、修改、编译、公开、披露或再发布源代码的
@@ -356,6 +375,8 @@ TaxiNow 是受版权保护的软件，不是开源或公有领域软件。软件
 - **模拟器状态为红色：**启动 MSFS 2024 或 MSFS 2020 并进入飞行，必要时重新启动 TaxiNow。
 - **模拟器状态为橙色：**等待飞行完全加载并保持飞机在地面，然后刷新位置。
 - **没有飞机图标：**选择正确机场并确认同步状态为绿色。
+- **VATSIM 交通不是持续刷新：**VATSIM 官方网络数据源约每 15 秒生成一次。
+  TaxiNow 遵循这一频率，并让桌面端与 iPad 共用电脑端缓存。
 - **地图获取较慢：**选择 1 个批量任务工作线程并稍后重试。公共 OSM
   会按用户分配请求槽位，同时发送更多请求往往反而更慢。OSM 通常需要
   5–30 秒，繁忙或复杂机场可能需要 30–90 秒。连续 45
