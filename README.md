@@ -2,7 +2,7 @@
   <img src="assets/taxinow-logo.png" width="540" alt="TaxiNow" />
 </p>
 
-# TaxiNow V1.5.1 (Build 127)
+# TaxiNow V1.6 (Build 129)
 
 **[English](#english) | [中文](#中文)**
 
@@ -58,6 +58,13 @@ operational training.
 - Optional nearby VATSIM traffic from the official public network-data feed,
   shown as orange aircraft with upright callsign labels; the local MSFS
   aircraft remains cyan
+- Optional nearby BeyondATC traffic injected into MSFS, read through SimConnect
+  and shown as violet aircraft with heading-aware callsign labels
+- Dedicated SayIntentions traffic integration using the active local flight ID
+  and the official SayIntentions Tracker, preserving real callsigns while
+  matching aircraft to live SimConnect positions
+- VATSIM, BeyondATC, and SayIntentions traffic displays are mutually exclusive;
+  selecting one automatically disables and clears the other two
 - Reliable aircraft-icon synchronization as soon as the map layer becomes
   ready, including for stationary aircraft and after switching airports
 - Automatic recovery after legitimate long-distance telemetry gaps, so the
@@ -123,11 +130,11 @@ use; customized taxi routes are available when an automatic route is unsuitable.
 
 ### Installation
 
-1. Close TaxiNow. V1.5.1 may be installed over an earlier version. If you prefer
+1. Close TaxiNow. V1.6 may be installed over an earlier version. If you prefer
    to uninstall first, choose **Yes** when asked to keep downloaded maps and
    user data so the new installation can reuse them.
 2. Download the installer from one of the two official channels above.
-3. Run `TaxiNow-V1.5.1-Build-127-Setup.exe`.
+3. Run `TaxiNow-V1.6-Build-129-Setup.exe`.
 4. Read and accept the EULA.
 5. Complete setup and launch TaxiNow.
 
@@ -172,6 +179,15 @@ The optional VATSIM traffic setting is off by default. When enabled, TaxiNow's
 PC service requests the official public VATSIM network-data feed, caches it for
 about 15 seconds, and forwards only the nearby aircraft fields needed for the
 map. Local simulator telemetry is not sent to VATSIM.
+
+The optional BeyondATC and SayIntentions traffic settings are also off by
+default. BeyondATC traffic is read from non-user aircraft already injected into
+MSFS through SimConnect. For SayIntentions, TaxiNow reads only the active
+`flight_id` from the documented local SAPI response, then requests that flight's
+traffic from the official SayIntentions Tracker so real callsigns can be matched
+to live simulator positions. TaxiNow does not expose or log the SayIntentions
+API key, email address, or other account fields. Only one of VATSIM, BeyondATC,
+or SayIntentions traffic can be displayed at a time.
 
 TaxiNow source code is not publicly available. Qualified independent security
 or privacy experts may request limited review access from Sky Ning solely to
@@ -218,6 +234,14 @@ TaxiNow databases, caches, settings, logs, and downloaded assets.
 - **VATSIM traffic refreshes only occasionally:** the official VATSIM
   network-data feed is regenerated about every 15 seconds. TaxiNow follows
   that cadence and shares one PC-side cache between desktop and iPad views.
+- **BeyondATC labels are missing or incorrect:** confirm BeyondATC has injected
+  traffic into the current MSFS flight, then enable only **Show BeyondATC
+  Traffic** in TaxiNow. SimConnect does not identify which application injected
+  an AI aircraft, so other MSFS AI traffic should be disabled.
+- **SayIntentions traffic shows no aircraft:** confirm SayIntentions is running
+  an active flight with AI traffic enabled, then select **Show SayIntentions
+  Traffic**. TaxiNow obtains the active flight ID locally and uses the official
+  Tracker for callsigns; VATSIM and BeyondATC display will turn off automatically.
 - **Slow map acquisition:** use 1 batch worker and retry later. Public OSM
   server-side processing is often slower when several requests compete for
   the same per-user slots. OSM normally takes 5–30 seconds; busy airports can take
@@ -260,6 +284,12 @@ TaxiNow 仅限个人模拟飞行使用，严禁用于真实飞行、真实导航
 - 落地后自动切换到飞机当前所在机场；地图未下载时自动打开机场选择器并提示下载
 - 可选显示官方公开网络数据源中的附近 VATSIM 交通；其他飞机使用带呼号的
   橘色图标，本机 MSFS 飞机保持青色
+- 可选显示由 BeyondATC 注入 MSFS 的附近交通；TaxiNow 通过 SimConnect 读取，
+  并使用带航向和呼号标签的紫色飞机图标显示
+- 新增独立的 SayIntentions 交通功能：读取当前本地航班 ID，通过官方
+  SayIntentions Tracker 保留真实呼号，并与 SimConnect 实时位置匹配
+- VATSIM、BeyondATC 与 SayIntentions 三种交通来源互斥；选择一种会自动关闭
+  并清除另外两种，避免重复显示
 - 地图图层就绪后立即可靠同步飞机图标，飞机静止或切换机场后同样有效
 - 桌面端与 iPad 使用相同的 SVG 飞机图标；iPad 可立即显示，图标尺寸统一为 32.4 px
 - 滑行道灰色铺装及其边缘加宽 20%，提高地面地图辨识度
@@ -306,10 +336,10 @@ TaxiNow 现已包含可重复的全球预处理流水线，可按照可用的省
 
 ### 安装方法
 
-1. 关闭 TaxiNow。V1.5.1 可以直接覆盖安装旧版本；如果希望先卸载，卸载器询问是否
+1. 关闭 TaxiNow。V1.6 可以直接覆盖安装旧版本；如果希望先卸载，卸载器询问是否
    保留地图和用户数据时请选择 **“是”**，新版安装后即可继续使用。
 2. 从上述两个官方渠道之一下载安装程序。
-3. 运行 `TaxiNow-V1.5.1-Build-127-Setup.exe`。
+3. 运行 `TaxiNow-V1.6-Build-129-Setup.exe`。
 4. 阅读并同意最终用户许可协议。
 5. 完成安装并启动 TaxiNow。
 
@@ -348,6 +378,13 @@ TaxiNow 不要求注册账号，不包含广告，不包含内置行为分析，
 官方公开网络数据源，缓存约 15 秒，并仅向地图提供显示附近飞机所需的字段。
 TaxiNow 不会把本机模拟器遥测发送给 VATSIM。
 
+可选的 BeyondATC 与 SayIntentions 交通功能同样默认关闭。BeyondATC 交通直接通过
+SimConnect 读取已经注入 MSFS 的非本机飞机。SayIntentions 模式仅从官方文档所述的
+本地 SAPI 响应读取当前 `flight_id`，再通过官方 SayIntentions Tracker 获取该航班的
+交通，以便将真实呼号与模拟器实时位置匹配。TaxiNow 不会公开或记录 SayIntentions
+API Key、邮箱地址或其他账户字段。VATSIM、BeyondATC 与 SayIntentions 一次只能
+显示一种交通来源。
+
 TaxiNow 源代码不公开。符合条件的独立安全或隐私专家，可以仅以核验 TaxiNow
 安全与隐私行为为目的，向 Sky Ning 申请有限审查访问。是否批准及具体审查条件
 由开发者决定。审查权限不包含复制、修改、编译、公开、披露或再发布源代码的
@@ -383,6 +420,12 @@ TaxiNow 是受版权保护的软件，不是开源或公有领域软件。软件
 - **没有飞机图标：**选择正确机场并确认同步状态为绿色。
 - **VATSIM 交通不是持续刷新：**VATSIM 官方网络数据源约每 15 秒生成一次。
   TaxiNow 遵循这一频率，并让桌面端与 iPad 共用电脑端缓存。
+- **BeyondATC 呼号缺失或不正确：**确认 BeyondATC 已向当前 MSFS 飞行注入交通，
+  并只启用 TaxiNow 的**显示 BeyondATC 交通**。SimConnect 无法识别 AI 飞机由哪个
+  程序注入，因此应关闭其他 MSFS AI 交通来源。
+- **SayIntentions 没有显示交通：**确认 SayIntentions 正在运行有效航班且已开启
+  AI 交通，然后选择**显示 SayIntentions 交通**。TaxiNow 会在本地取得当前航班 ID，
+  并使用官方 Tracker 获取呼号；VATSIM 与 BeyondATC 显示会自动关闭。
 - **地图获取较慢：**选择 1 个批量任务工作线程并稍后重试。公共 OSM
   会按用户分配请求槽位，同时发送更多请求往往反而更慢。OSM 通常需要
   5–30 秒，繁忙或复杂机场可能需要 30–90 秒。连续 45
