@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report a problem in TaxiNow / 报告 TaxiNow 问题
+description: Report a problem in TaxiNow Pro / 报告 TaxiNow Pro 问题
 body:
   - type: input
     id: summary
