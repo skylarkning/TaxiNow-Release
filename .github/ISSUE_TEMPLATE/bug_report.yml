@@ -1,0 +1,31 @@
+name: Bug Report
+description: Report a problem in TaxiNow / 报告 TaxiNow 问题
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe your report or request / 简述问题或建议
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact / 联系方式
+      description: GitHub username or another contact you are comfortable sharing publicly / GitHub 用户名或可公开的联系方式
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem description / 问题描述
+      description: Describe the issue and steps to reproduce, or the need behind your feature request / 描述问题和复现步骤，或功能需求
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result / 预期结果
+      description: What should happen? / 希望实现什么效果？
+    validations:
+      required: true
