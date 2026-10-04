@@ -1,6 +1,6 @@
 # TaxiNow Pro V2.0：从机场滑行，到看清整段飞行
 
-发布日期：2026年10月3日 · Build 206
+发布日期：2026年10月3日 · Build 207
 
 TaxiNow 正式更名为 **TaxiNow Pro**。V2.0 将机场地面地图、航线浏览和垂直剖面串在一起：出发前导入计划，在地球视图中查看航路，飞行中结合交通、天气和地形理解当前位置，落地后再回到机场滑行地图。原有的地面功能继续保留，而这次更新让整个飞行过程有了更完整的视图。
 
@@ -56,12 +56,12 @@ Windows 桌面端支持 Microsoft Flight Simulator 2020、Microsoft Flight Simul
 
 ## 升级到 V2.0
 
-关闭 TaxiNow / TaxiNow Pro 后运行 `TaxiNow-Pro-V2.0-Build-206-Setup.exe`，可以覆盖安装旧版本。安装目录和用户数据标识保留兼容性，旧快捷方式会迁移为 TaxiNow Pro；如先卸载旧版本，请选择保留地图和用户数据。
+关闭 TaxiNow / TaxiNow Pro 后运行 `TaxiNow-Pro-V2.0-Build-207-Setup.exe`，可以覆盖安装旧版本。安装目录和用户数据标识保留兼容性，旧快捷方式会迁移为 TaxiNow Pro；如先卸载旧版本，请选择保留地图和用户数据。
 
-高级用户也可以下载 `TaxiNow-Pro-V2.0-Build-206-Portable.zip`，解压后运行其中的 `TaxiNow.App.exe`。Portable 使用相同的程序，但不会提供安装器的快捷方式、卸载与前置运行环境检查；地图数据也不会自动存放在解压目录里。
+高级用户也可以下载 `TaxiNow-Pro-V2.0-Build-207-Portable.zip`，解压后运行其中的 `TaxiNow.App.exe`。Portable 使用相同的程序，但不会提供安装器的快捷方式、卸载与前置运行环境检查；地图数据也不会自动存放在解压目录里。
 
 ## 致谢
 
 特别感谢 **睡务局局长（[@stewieqi-del](https://github.com/stewieqi-del)）** 对 V2.0 的贡献。也感谢提供问题反馈、界面建议与测试结果的用户，以及各地图数据、模拟器接口和开源组件的维护者。
 
-[下载 V2.0 / Build 206](https://github.com/skylarkning/TaxiNow-Release/releases/tag/v2.0.0) · [报告问题或建议](https://github.com/skylarkning/TaxiNow-Release/issues/new/choose)
+[下载 V2.0 / Build 207](https://github.com/skylarkning/TaxiNow-Release/releases/tag/v2.0.0) · [报告问题或建议](https://github.com/skylarkning/TaxiNow-Release/issues/new/choose)

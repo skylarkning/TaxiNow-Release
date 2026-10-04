@@ -2,17 +2,20 @@
   <img src="assets/taxinow-logo.png" width="540" alt="TaxiNow Pro" />
 </p>
 
-# TaxiNow Pro V2.0 (Build 206)
+# TaxiNow Pro V2.0 (Build 207)
 
 **[English](#english) | [中文](#中文)**
 
 > Flight simulation use only. Not for real-world navigation.<br>
 > 仅供模拟飞行使用，严禁用于真实飞行导航。
 
-## V2.0 · Build 206
+## V2.0 · Build 207
 
-- **[Windows installer / 安装包](https://github.com/skylarkning/TaxiNow-Release/releases/download/v2.0.0/TaxiNow-Pro-V2.0-Build-206-Setup.exe)**
-- **[Portable ZIP / 便携版](https://github.com/skylarkning/TaxiNow-Release/releases/download/v2.0.0/TaxiNow-Pro-V2.0-Build-206-Portable.zip)**
+Silent update of V2.0: restores the logo at the top left.
+V2.0 静默更新：恢复左上角 Logo。
+
+- **[Windows installer / 安装包](https://github.com/skylarkning/TaxiNow-Release/releases/download/v2.0.0/TaxiNow-Pro-V2.0-Build-207-Setup.exe)**
+- **[Portable ZIP / 便携版](https://github.com/skylarkning/TaxiNow-Release/releases/download/v2.0.0/TaxiNow-Pro-V2.0-Build-207-Portable.zip)**
 - [Release notes / 发布说明](https://github.com/skylarkning/TaxiNow-Release/releases/tag/v2.0.0) · [SHA-256 checksums / 校验值](docs/SHA256SUMS_V2.0.txt)
 - [English V2.0 blog](docs/BLOG_V2.0.en.md) · [中文 V2.0 更新文章](docs/BLOG_V2.0.zh-CN.md) · [Bilingual changelog / 双语更新日志](docs/CHANGELOG_V2.0.md)
 - [Report a bug or request a feature / 报告问题或建议](https://github.com/skylarkning/TaxiNow-Release/issues/new/choose)
@@ -148,7 +151,7 @@ use; customized taxi routes are available when an automatic route is unsuitable.
    to uninstall first, choose **Yes** when asked to keep downloaded maps and
    user data so the new installation can reuse them.
 2. Download the installer from one of the two official channels above.
-3. Run `TaxiNow-Pro-V2.0-Build-206-Setup.exe`.
+3. Run `TaxiNow-Pro-V2.0-Build-207-Setup.exe`.
 4. Read and accept the EULA.
 5. Complete setup and launch TaxiNow Pro.
 
@@ -366,7 +369,7 @@ TaxiNow Pro 现已包含可重复的全球预处理流水线，可按照可用�
 1. 关闭 TaxiNow Pro。V2.0 可以直接覆盖安装旧版本；如果希望先卸载，卸载器询问是否
    保留地图和用户数据时请选择 **“是”**，新版安装后即可继续使用。
 2. 从上述两个官方渠道之一下载安装程序。
-3. 运行 `TaxiNow-Pro-V2.0-Build-206-Setup.exe`。
+3. 运行 `TaxiNow-Pro-V2.0-Build-207-Setup.exe`。
 4. 阅读并同意最终用户许可协议。
 5. 完成安装并启动 TaxiNow Pro。
 

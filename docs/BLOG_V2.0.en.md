@@ -1,6 +1,6 @@
 # TaxiNow Pro V2.0: from airport taxiing to a clearer view of the whole flight
 
-Released October 3, 2026 · Build 206
+Released October 3, 2026 · Build 207
 
 TaxiNow is now **TaxiNow Pro**. V2.0 brings airport surface maps, route exploration and a vertical situation profile into one workspace. Import a plan before departure, explore it on the globe, use traffic, weather and terrain overlays in flight, then return to the airport map after landing. The existing taxi tools remain, with a broader view of the journey around them.
 
@@ -56,12 +56,12 @@ The update dialog now distinguishes an available update, an up-to-date installat
 
 ## Upgrading to V2.0
 
-Close TaxiNow / TaxiNow Pro, then run `TaxiNow-Pro-V2.0-Build-206-Setup.exe`. It can install over an earlier version. Existing installation and data identifiers are retained for compatibility, and legacy shortcuts migrate to TaxiNow Pro. If you uninstall first, choose to keep maps and user data.
+Close TaxiNow / TaxiNow Pro, then run `TaxiNow-Pro-V2.0-Build-207-Setup.exe`. It can install over an earlier version. Existing installation and data identifiers are retained for compatibility, and legacy shortcuts migrate to TaxiNow Pro. If you uninstall first, choose to keep maps and user data.
 
-Advanced users can download `TaxiNow-Pro-V2.0-Build-206-Portable.zip`, extract it and run `TaxiNow.App.exe`. It contains the same application but does not provide the installer's shortcuts, uninstaller or prerequisite checks. Downloaded maps are not automatically stored inside the extracted application folder.
+Advanced users can download `TaxiNow-Pro-V2.0-Build-207-Portable.zip`, extract it and run `TaxiNow.App.exe`. It contains the same application but does not provide the installer's shortcuts, uninstaller or prerequisite checks. Downloaded maps are not automatically stored inside the extracted application folder.
 
 ## Credits
 
 Special thanks to **睡务局局长 ([@stewieqi-del](https://github.com/stewieqi-del))** for contributions to V2.0. Thanks also to the users who supplied reports, interface suggestions and testing feedback, and to the maintainers of the mapping sources, simulator interfaces and open-source components used by the application.
 
-[Download V2.0 / Build 206](https://github.com/skylarkning/TaxiNow-Release/releases/tag/v2.0.0) · [Report a bug or request a feature](https://github.com/skylarkning/TaxiNow-Release/issues/new/choose)
+[Download V2.0 / Build 207](https://github.com/skylarkning/TaxiNow-Release/releases/tag/v2.0.0) · [Report a bug or request a feature](https://github.com/skylarkning/TaxiNow-Release/issues/new/choose)

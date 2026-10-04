@@ -1,4 +1,4 @@
-# TaxiNow Pro V2.0 — Build 206
+# TaxiNow Pro V2.0 — Build 207
 
 Release date: October 3, 2026
 
@@ -7,6 +7,8 @@ TaxiNow is now **TaxiNow Pro**. V2.0 connects airport taxiing, globe route explo
 [Read the full English V2.0 blog](https://github.com/skylarkning/TaxiNow-Release/blob/main/docs/BLOG_V2.0.en.md) · [阅读完整中文 V2.0 更新文章](https://github.com/skylarkning/TaxiNow-Release/blob/main/docs/BLOG_V2.0.zh-CN.md)
 
 ## What's new
+
+- Build 207 silent update: restores the TaxiNow logo at the top left.
 
 - New Route workspace with a globe, 2D/3D switching and a north-up compass; Route is the default startup view.
 - SimBrief import with route waypoints, aircraft type, planned altitude and fit-route controls; the username is saved in the browser.
@@ -33,9 +35,9 @@ TaxiNow is now **TaxiNow Pro**. V2.0 connects airport taxiing, globe route explo
 
 ## Upgrade
 
-Close TaxiNow / TaxiNow Pro, then run `TaxiNow-Pro-V2.0-Build-206-Setup.exe`. It may be installed over an earlier version. If uninstalling first, choose to keep downloaded maps and user data.
+Close TaxiNow / TaxiNow Pro, then run `TaxiNow-Pro-V2.0-Build-207-Setup.exe`. It may be installed over an earlier version. If uninstalling first, choose to keep downloaded maps and user data.
 
-For Portable, extract `TaxiNow-Pro-V2.0-Build-206-Portable.zip` and run `TaxiNow.App.exe`. WebView2 Runtime is required; Portable does not perform the installer's prerequisite checks or create shortcuts. Maps remain in the configured user-data location rather than automatically moving into the extracted folder.
+For Portable, extract `TaxiNow-Pro-V2.0-Build-207-Portable.zip` and run `TaxiNow.App.exe`. WebView2 Runtime is required; Portable does not perform the installer's prerequisite checks or create shortcuts. Maps remain in the configured user-data location rather than automatically moving into the extracted folder.
 
 ## Credits
 
@@ -43,13 +45,15 @@ Special thanks to **睡务局局长 ([@stewieqi-del](https://github.com/stewieqi
 
 ---
 
-# TaxiNow Pro V2.0 — 内部版本 206
+# TaxiNow Pro V2.0 — 内部版本 207
 
 发布日期：2026年10月3日
 
 TaxiNow 正式更名为 **TaxiNow Pro**。V2.0 将机场滑行、地球航线浏览与垂直剖面连接到同一工作区。
 
 ## 更新日志
+
+- Build 207 静默更新：恢复应用左上角 TaxiNow Logo。
 
 - 新增航线地球工作区、2D/3D 切换和正北指南针；启动默认显示航线页。
 - 新增 SimBrief 导入，展示航路点、机型、计划高度并支持完整航路适配；用户名在浏览器中自动保存。
@@ -76,9 +80,9 @@ TaxiNow 正式更名为 **TaxiNow Pro**。V2.0 将机场滑行、地球航线浏
 
 ## 升级方法
 
-关闭 TaxiNow / TaxiNow Pro 后运行 `TaxiNow-Pro-V2.0-Build-206-Setup.exe`，可覆盖安装旧版本。如先卸载，请选择保留已下载地图和用户数据。
+关闭 TaxiNow / TaxiNow Pro 后运行 `TaxiNow-Pro-V2.0-Build-207-Setup.exe`，可覆盖安装旧版本。如先卸载，请选择保留已下载地图和用户数据。
 
-Portable 用户解压 `TaxiNow-Pro-V2.0-Build-206-Portable.zip` 后运行 `TaxiNow.App.exe`。需要 WebView2 Runtime，Portable 不提供安装器的前置环境检查或快捷方式创建。地图保留在配置的用户数据目录，不会自动移到解压目录。
+Portable 用户解压 `TaxiNow-Pro-V2.0-Build-207-Portable.zip` 后运行 `TaxiNow.App.exe`。需要 WebView2 Runtime，Portable 不提供安装器的前置环境检查或快捷方式创建。地图保留在配置的用户数据目录，不会自动移到解压目录。
 
 ## 致谢
 
@@ -86,8 +90,8 @@ Portable 用户解压 `TaxiNow-Pro-V2.0-Build-206-Portable.zip` 后运行 `TaxiN
 
 ## SHA-256
 
-- `TaxiNow-Pro-V2.0-Build-206-Setup.exe`: `8E018885B6F4D82E424ADCF21DBA761520E2A83FA24A2972E6E8F4C89DB5EDAE`
-- `TaxiNow-Pro-V2.0-Build-206-Portable.zip`: `EBEFDEFC90BF0C5C5E3A328BB2245BDEF04DE13207AC9D379EED21D8339BCE9C`
+- `TaxiNow-Pro-V2.0-Build-207-Setup.exe`: `85B5B8AFE1BCDC82DAACE67C8D2A4A43FB59BD00AB596BE6E99B6F45B933BCFB`
+- `TaxiNow-Pro-V2.0-Build-207-Portable.zip`: `68DDA143CE13D3B15D22F2D3B7474D247C5C0800B0EAEBFDF26E1D9EA8A0F6A4`
 
 Flight simulation use only. Not for real-world navigation.
 仅供模拟飞行使用，严禁用于真实导航。
